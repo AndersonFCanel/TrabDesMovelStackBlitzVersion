@@ -168,10 +168,6 @@ export class ValidacaoService {
       }
   }
 
-
-
-
-
   public restart(reiniciarPartida: boolean) {
 
     if (reiniciarPartida) {

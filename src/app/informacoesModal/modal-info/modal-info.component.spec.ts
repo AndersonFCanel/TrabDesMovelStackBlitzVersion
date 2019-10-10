@@ -6,5 +6,4 @@ describe('NgbdModalComponent', () => {
   let component: NgbdModalComponent;
   let fixture: ComponentFixture<NgbdModalComponent>;
 
-  
 });

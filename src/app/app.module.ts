@@ -12,19 +12,10 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 import { InformacoesModalModule } from './informacoesModal/informacoesModal.module';
 
-
-/*
-import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-import { HttpClientModule } from '@angular/common/http';
-import { NgbdModalComponent } from './informacoes/modal-info/modal-info.component';
-import { NgbdModalContent } from './informacoes/modal-info/modal-content'
-
-*/
 @NgModule({
   declarations: [
     AppComponent,
     TecladoComponent,
-  //  NgbdModalComponent, NgbdModalContent,
   ],
   imports: [
     BrowserModule,
@@ -34,10 +25,8 @@ import { NgbdModalContent } from './informacoes/modal-info/modal-content'
     NgbModule.forRoot(),
     InformacoesModule,
     InformacoesModalModule
-    //FormsModule, ReactiveFormsModule, HttpClientModule,
   ],
   providers: [],
-  //entryComponents: [NgbdModalContent],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
