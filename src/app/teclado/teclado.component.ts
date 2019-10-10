@@ -1,4 +1,4 @@
-import { Component, OnInit, ChangeDetectorRef } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { Injectable } from '@angular/core';
 //import { ValidacaoService } from '../validacao.service';
 
@@ -28,7 +28,7 @@ export class TecladoComponent implements OnInit {
 
   //constructor(private validacao: ValidacaoService) { }
 
-  constructor(private cdr:ChangeDetectorRef) { }
+  constructor(  ) { }
 
   ngOnInit() {
 
@@ -179,8 +179,6 @@ export class TecladoComponent implements OnInit {
   }
 
   public restart(reiniciarPartida: boolean) {
-
-    this.cdr.detectChanges();
 
     if (reiniciarPartida) {
       this.pontoPlayer1 = 0;

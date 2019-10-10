@@ -38,7 +38,7 @@ export class NgbdModalContent {
   constructor(public activeModal: NgbActiveModal , private teclado: TecladoComponent) {
 
   }    
-   restart(reiniciarPartida: boolean) {
+  @Input() restart(reiniciarPartida: boolean) {
     
        this.teclado.restart(false);
     
