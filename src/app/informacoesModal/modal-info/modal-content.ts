@@ -24,8 +24,6 @@ import { TecladoComponent } from '../../teclado/teclado.component';
         </div>
         <div class="col-2 col-lg-2 ">
         </div>
-        <div class="col-2 col-lg-2">
-        </div>
         <div class="col-5 -lg-5 ">
             <button (click)="restart(true)" type="button" class="btn btn-danger btn-lg btn-block">Reiniciar
                 Partida</button>
@@ -42,7 +40,7 @@ export class NgbdModalContent {
   }    
    restart(reiniciarPartida: boolean) {
     
-    this.teclado.restart(false);
+       this.teclado.restart(false);
     
   }
 

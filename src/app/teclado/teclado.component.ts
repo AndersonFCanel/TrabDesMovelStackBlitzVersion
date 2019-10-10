@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ChangeDetectorRef } from '@angular/core';
 import { Injectable } from '@angular/core';
 //import { ValidacaoService } from '../validacao.service';
 
@@ -28,10 +28,11 @@ export class TecladoComponent implements OnInit {
 
   //constructor(private validacao: ValidacaoService) { }
 
-  constructor() { }
+  constructor(private cdr:ChangeDetectorRef) { }
 
   ngOnInit() {
 
+     //this.cdr.detectChanges();
     //inicializando os vetores
     for (var counter: number = 0; counter < 9; counter++) {
 
@@ -178,6 +179,8 @@ export class TecladoComponent implements OnInit {
   }
 
   public restart(reiniciarPartida: boolean) {
+
+    this.cdr.detectChanges();
 
     if (reiniciarPartida) {
       this.pontoPlayer1 = 0;
