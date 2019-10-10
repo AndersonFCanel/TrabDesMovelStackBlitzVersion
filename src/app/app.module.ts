@@ -10,7 +10,7 @@ import { AlertModule, ButtonsModule } from 'ngx-bootstrap';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 
-import { InformacoesModalModule } from './InformacoesModal/informacoesModal.module';
+import { InformacoesModalModule } from './informacoesModal/informacoesModal.module';
 
 
 /*
