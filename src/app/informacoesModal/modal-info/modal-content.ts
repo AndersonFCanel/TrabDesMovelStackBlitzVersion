@@ -38,6 +38,11 @@ export class NgbdModalContent {
   constructor(public activeModal: NgbActiveModal , private teclado: TecladoComponent) {
 
   }  
+   ngOnInit() {
+
+   open();
+
+  }
 
   @Input() restart(reiniciarPartida: boolean) {
     
