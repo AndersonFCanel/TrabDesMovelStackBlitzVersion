@@ -38,7 +38,7 @@ export class NgbdModalContent {
   constructor(public activeModal: NgbActiveModal , private teclado: TecladoComponent) {
 
   }  
-   ngOnInit() {
+  ngOnInit() {
 
    open();
 
