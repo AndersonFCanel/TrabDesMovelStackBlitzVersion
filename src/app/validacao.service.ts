@@ -6,18 +6,6 @@ import { Injectable } from '@angular/core';
 
 export class ValidacaoService {
 
-  
-  /*public vez = 0;
-  public player1 = "UM";
-  public player2 = "DOIS";
-  public pontoPlayer1 = 0;
-  public pontoPlayer2 = 0;
-  public fim = false;
-   public jogada = [];
-  public marcarReadonly = [];
-  public corBotao = [];
-  */
-
   public vez ;
   public player1 ;
   public player2 ;
@@ -98,8 +86,6 @@ export class ValidacaoService {
   }
 
 
-
-
   ngOnInit() {
 
     //inicializando os vetores
@@ -149,7 +135,7 @@ export class ValidacaoService {
       this.vez = this.vez + 1;
       this.jogada[casaTabuleiro] = "O"
       this.readonly(casaTabuleiro);
-      this.checarVitoria();
+      //this.checarVitoria();
 
       //this.imprimeCasaMarcada()
 
@@ -161,7 +147,7 @@ export class ValidacaoService {
       this.vez = this.vez + 1;
       this.jogada[casaTabuleiro] = "X"
       this.readonly(casaTabuleiro);
-      this.checarVitoria();
+      /this.checarVitoria();
 
       //this.imprimeCasaMarcada()
 
@@ -171,7 +157,7 @@ export class ValidacaoService {
   }
 
 
-  checarVitoria() {
+  /*checarVitoria( ) {
 
     if (this.jogada[0] == "X" && this.jogada[1] == "X" && this.jogada[2] == "X") {
       this.marcaJogadaVencedora(0, 1, 2, "X");
@@ -238,7 +224,7 @@ export class ValidacaoService {
         console.log("Ainda não há vencedor");
         return ""
       }
-  }
+  }*/
 
   public restart(reiniciarPartida: boolean) {
 
