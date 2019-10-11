@@ -86,7 +86,7 @@ export class ValidacaoService {
   }
 
 
-  ngOnInit() {
+ /* ngOnInit() {
 
     //inicializando os vetores
     for (var counter: number = 0; counter < 9; counter++) {
@@ -99,7 +99,7 @@ export class ValidacaoService {
       console.log("for loop executed : " + counter)
     }
 
-  }
+  }*/
 
   readonly(casaTabuleiro: number) {
     this.marcarReadonly[casaTabuleiro] = true;
@@ -231,11 +231,20 @@ export class ValidacaoService {
     if (reiniciarPartida) {
       this.pontoPlayer1 = 0;
       this.pontoPlayer2 = 0;
-      this.ngOnInit();
-    } else {
+    } 
+    
+    
+    //inicializando os vetores
+    for (var counter: number = 0; counter < 9; counter++) {
 
-      this.ngOnInit();
+      this.jogada[counter] = "'";
+      this.marcarReadonly[counter] = false;
+      this.corBotao[counter] = "btn btn-light btn-lg btn-block";
+      this.fim = false;
+
+      console.log("for loop executed : " + counter)
     }
+
   }
 
 }

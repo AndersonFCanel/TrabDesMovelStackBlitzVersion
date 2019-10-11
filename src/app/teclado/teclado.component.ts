@@ -15,7 +15,7 @@ import { ValidacaoService } from '../validacao.service';
 export class TecladoComponent implements OnInit {
 
 
-public jogada;
+  public jogada;
   public vez;
   public player1;
   public player2 ;
@@ -74,7 +74,6 @@ constructor( private  validacao:ValidacaoService ) {
     }else{
       this.validacao.pontoPlayer2 ++;
     }
-
 
 //alert(vencedor + " venceu!");
   }
