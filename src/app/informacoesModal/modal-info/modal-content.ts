@@ -50,9 +50,8 @@ export class NgbdModalContent {
     console.log( this.teclado.fim );
 
   }
-
-
-       //this.teclado.restart(false);
+  
+  this.teclado.restart(false);
     
   }
 
