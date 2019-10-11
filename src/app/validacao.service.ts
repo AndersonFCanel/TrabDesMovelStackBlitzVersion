@@ -101,7 +101,7 @@ export class ValidacaoService {
 
   }*/
 
-  readonly(casaTabuleiro: number) {
+  /*readonly(casaTabuleiro: number) {
     this.marcarReadonly[casaTabuleiro] = true;
     this.corBotao[casaTabuleiro] = "btn btn-dark btn-lg btn-block";
   }
@@ -155,7 +155,7 @@ export class ValidacaoService {
     }
 
   }
-
+*/
 
   /*checarVitoria( ) {
 

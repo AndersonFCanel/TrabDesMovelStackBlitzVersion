@@ -116,69 +116,68 @@ constructor( private  validacao:ValidacaoService ) {
   }
 
 
-
   checarVitoria( ) {
 
     if (this.validacao.jogada[0] == "X" && this.validacao.jogada[1] == "X" && this.validacao.jogada[2] == "X") {
-      this.validacao.marcaJogadaVencedora(0, 1, 2, "X");
+      this.marcaJogadaVencedora(0, 1, 2, "X");
 
     } else if
       (this.validacao.jogada[3] == "X" && this.validacao.jogada[4] == "X" && this.validacao.jogada[5] == "X") {
-      this.validacao.marcaJogadaVencedora(3, 4, 5, "X");
+      this.marcaJogadaVencedora(3, 4, 5, "X");
 
     } else if
       (this.validacao.jogada[6] == "X" && this.validacao.jogada[7] == "X" && this.validacao.jogada[8] == "X") {
-      this.validacao.marcaJogadaVencedora(6, 7, 8, "X");
+      this.marcaJogadaVencedora(6, 7, 8, "X");
 
     } else if
       (this.validacao.jogada[0] == "X" && this.validacao.jogada[3] == "X" && this.validacao.jogada[6] == "X") {
-      this.validacao.marcaJogadaVencedora(0, 3, 6, "X");
+      this.marcaJogadaVencedora(0, 3, 6, "X");
 
     } else if
       (this.validacao.jogada[1] == "X" && this.validacao.jogada[4] == "X" && this.validacao.jogada[7] == "X") {
-      this.validacao.marcaJogadaVencedora(1, 4, 7, "X");
+      this.marcaJogadaVencedora(1, 4, 7, "X");
 
     } else if
       (this.validacao.jogada[2] == "X" && this.validacao.jogada[5] == "X" && this.validacao.jogada[8] == "X") {
-      this.validacao.marcaJogadaVencedora(2, 5, 8, "X");
+      this.marcaJogadaVencedora(2, 5, 8, "X");
 
     } else if
       (this.validacao.jogada[0] == "X" && this.validacao.jogada[4] == "X" && this.validacao.jogada[8] == "X") {
-      this.validacao.marcaJogadaVencedora(0, 4, 8, "X");
+      this.marcaJogadaVencedora(0, 4, 8, "X");
     } else if
       (this.validacao.jogada[2] == "X" && this.validacao.jogada[4] == "X" && this.validacao.jogada[6] == "X") {
-      this.validacao.marcaJogadaVencedora(2, 4, 6, "X");
+      this.marcaJogadaVencedora(2, 4, 6, "X");
 
     } else
       if (this.validacao.jogada[0] == "O" && this.validacao.jogada[1] == "O" && this.validacao.jogada[2] == "O") {
-        this.validacao.marcaJogadaVencedora(0, 1, 2, "O");
+        this.marcaJogadaVencedora(0, 1, 2, "O");
 
       } else if
         (this.validacao.jogada[3] == "O" && this.validacao.jogada[4] == "O" && this.validacao.jogada[5] == "O") {
-        this.validacao.marcaJogadaVencedora(3, 4, 5, "O");
+        this.marcaJogadaVencedora(3, 4, 5, "O");
 
       } else if
         (this.validacao.jogada[6] == "O" && this.validacao.jogada[7] == "O" && this.validacao.jogada[8] == "O") {
-        this.validacao.marcaJogadaVencedora(6, 7, 8, "O");
+        this.marcaJogadaVencedora(6, 7, 8, "O");
 
       } else if
         (this.validacao.jogada[0] == "O" && this.validacao.jogada[3] == "O" && this.validacao.jogada[6] == "O") {
-        this.validacao.marcaJogadaVencedora(0, 3, 6, "O");
+        this.marcaJogadaVencedora(0, 3, 6, "O");
 
       } else if
         (this.validacao.jogada[1] == "O" && this.validacao.jogada[4] == "O" && this.validacao.jogada[7] == "O") {
-        this.validacao.marcaJogadaVencedora(1, 4, 7, "O");
+        this.marcaJogadaVencedora(1, 4, 7, "O");
 
       } else if
         (this.validacao.jogada[2] == "O" && this.validacao.jogada[5] == "O" && this.validacao.jogada[8] == "O") {
-        this.validacao.marcaJogadaVencedora(2, 5, 8, "O");
+        this.marcaJogadaVencedora(2, 5, 8, "O");
 
       } else if
         (this.validacao.jogada[0] == "O" && this.validacao.jogada[4] == "O" && this.validacao.jogada[8] == "O") {
-        this.validacao.marcaJogadaVencedora(0, 4, 8, "O");
+        this.marcaJogadaVencedora(0, 4, 8, "O");
       } else if
         (this.validacao.jogada[2] == "O" && this.validacao.jogada[4] == "O" && this.validacao.jogada[6] == "O") {
-        this.validacao.marcaJogadaVencedora(2, 4, 6, "O");
+        this.marcaJogadaVencedora(2, 4, 6, "O");
 
       } else {
         console.log("Ainda não há vencedor");
@@ -194,7 +193,6 @@ constructor( private  validacao:ValidacaoService ) {
   
     }
 
-     
       //inicializando os vetores
     for (var counter: number = 0; counter < 9; counter++) {
 
