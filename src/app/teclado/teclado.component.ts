@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Injectable } from '@angular/core';
-//import { ValidacaoService } from '../validacao.service';
+import { ValidacaoService } from '../validacao.service';
 
 @Injectable({
   providedIn: 'root'
@@ -14,6 +14,11 @@ import { Injectable } from '@angular/core';
 
 export class TecladoComponent implements OnInit {
 
+constructor( private  validacao:ValidacaoService) {}
+
+
+  /*vs = new ValidacaoService(this.vez, this.player1, this.player2, this.pontoPlayer1, this.pontoPlayer2, this.fim, this.jogada, this.marcarReadonly, this.corBotao)
+
   public jogada = [];
   public vez = 0;
   public player1 = "UM";
@@ -21,14 +26,26 @@ export class TecladoComponent implements OnInit {
   public pontoPlayer1 = 0;
   public pontoPlayer2 = 0;
   public fim = false;
-  
+  public marcarReadonly = [];
+  public corBotao = [];
+*/
 
+  vs = new ValidacaoService()
+
+  public jogada = [];
+  public vez = 0;
+  public player1 = "UM";
+  public player2 = "DOIS";
+  public pontoPlayer1 = 0;
+  public pontoPlayer2 = 0;
+  public fim = false;
   public marcarReadonly = [];
   public corBotao = [];
 
-  //constructor(private validacao: ValidacaoService) { }
 
-  constructor(  ) { }
+  
+
+  
 
   ngOnInit() {
 
@@ -67,6 +84,7 @@ export class TecladoComponent implements OnInit {
     }else{
       this.pontoPlayer2 ++;
     }
+
 
 //alert(vencedor + " venceu!");
   }
@@ -109,7 +127,7 @@ export class TecladoComponent implements OnInit {
   }
 
 
-  checarVitoria() {
+  checarVitoria( ) {
 
     if (this.jogada[0] == "X" && this.jogada[1] == "X" && this.jogada[2] == "X") {
       this.marcaJogadaVencedora(0, 1, 2, "X");
@@ -188,13 +206,14 @@ export class TecladoComponent implements OnInit {
 
      
       //inicializando os vetores
-    for (var counter: number = 0; counter < 9; counter++) {
+    for (var counter: number = 0; counter < 1; counter++) {
 
       this.jogada[counter] = "'";
       this.marcarReadonly[counter] = false;
       this.corBotao[counter] = "btn btn-light btn-lg btn-block";
       this.fim = false;
 
+      //console.log( this.jogada[counter]);
       console.log("for loop executed : " + counter)
     }
   

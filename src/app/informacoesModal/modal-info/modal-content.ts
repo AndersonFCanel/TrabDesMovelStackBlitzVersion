@@ -37,10 +37,22 @@ export class NgbdModalContent {
   
   constructor(public activeModal: NgbActiveModal , private teclado: TecladoComponent) {
 
-  }    
+  }  
+
   @Input() restart(reiniciarPartida: boolean) {
     
-       this.teclado.restart(false);
+  
+  for (var counter: number = 0; counter < 9; counter++) {
+
+    console.log( this.teclado.jogada[counter]);
+    console.log( this.teclado.marcarReadonly[counter]);
+    console.log( this.teclado.corBotao[counter]);
+    console.log( this.teclado.fim );
+
+  }
+
+
+       //this.teclado.restart(false);
     
   }
 

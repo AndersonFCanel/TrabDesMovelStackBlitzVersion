@@ -3,23 +3,102 @@ import { Injectable } from '@angular/core';
 @Injectable({
   providedIn: 'root'
 })
+
 export class ValidacaoService {
 
-  public jogada = [];
-  public vez = 0;
+  
+  /*public vez = 0;
   public player1 = "UM";
   public player2 = "DOIS";
   public pontoPlayer1 = 0;
   public pontoPlayer2 = 0;
   public fim = false;
-  
-
+   public jogada = [];
   public marcarReadonly = [];
   public corBotao = [];
+  */
 
-  //constructor(private validacao: ValidacaoService) { }
+  public vez ;
+  public player1 ;
+  public player2 ;
+  public pontoPlayer1 ;
+  public pontoPlayer2 ;
+  public fim ;
+  public jogada ;
+  public marcarReadonly ;
+  public corBotao ;
+ 
 
-  constructor() { }
+  constructor( ) {
+      this.vez= 0;
+      this.player1 = "UM";
+      this.player2 = "DOIS";
+      this.pontoPlayer1 = 0;
+      this.pontoPlayer2 = 0;
+      this.fim = false;
+      this.jogada = [];
+      this.marcarReadonly = [];
+      this.corBotao = []; 
+   }
+
+
+  get Vez(){
+     return this.vez;
+  }
+  set Vez(value: Number) {
+    this.vez = value;
+  }
+   get Player1(){
+     return this.player1;
+  }
+  set Player1(value: String) {
+    this.player1 = value;
+  }
+   get Player2(){
+     return this.player1;
+  }
+  set Player2(value: String) {
+    this.player2 = value;
+  }
+   get PontoPlayer1(){
+     return this.pontoPlayer1;
+  }
+  set PontoPlayer1(value: Number) {
+    this.pontoPlayer1 = value;
+  }
+   get PontoPlayer2(){
+     return this.pontoPlayer2;
+  }
+  set PontoPlayer2(value: Number) {
+    this.pontoPlayer2 = value;
+  }
+ get Fim(){
+     return this.fim;
+  }
+  set Fim(value: Boolean) {
+    this.fim = value;
+  }
+  get Jogada(){
+     return this.jogada;
+  }
+  set Jogada(value) {
+    this.jogada = value;
+  }
+  get MarcarReadonly(){
+     return this.marcarReadonly;
+  }
+  set MarcarReadonly(value) {
+    this.marcarReadonly = value;
+  }
+  get CorBotao(){
+     return this.corBotao;
+  }
+  set CorBotao(value) {
+    this.corBotao = value;
+  }
+
+
+
 
   ngOnInit() {
 
@@ -60,13 +139,6 @@ export class ValidacaoService {
 
 //alert(vencedor + " venceu!");
   }
-
-  /*imprimeCasaMarcada() {
-    console.log(this.jogada[0], this.jogada[1], this.jogada[2] + "\n");
-    console.log(this.jogada[3], this.jogada[4], this.jogada[5] + "\n");
-    console.log(this.jogada[6], this.jogada[7], this.jogada[8] + "\n");
-
-  }*/
 
   marcaJogada(casaTabuleiro: number) {
     console.log("vez: " + this.vez);
@@ -179,10 +251,5 @@ export class ValidacaoService {
       this.ngOnInit();
     }
   }
-
-
-
-
-
 
 }
