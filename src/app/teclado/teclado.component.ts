@@ -132,7 +132,7 @@ export class TecladoComponent implements OnInit {
 
     } else if
       (this.jogada[2] == "X" && this.jogada[5] == "X" && this.jogada[8] == "X") {
-      this.marcaJogadaVencedora(2, 3, 8, "X");
+      this.marcaJogadaVencedora(2, 5, 8, "X");
 
     } else if
       (this.jogada[0] == "X" && this.jogada[4] == "X" && this.jogada[8] == "X") {
@@ -163,7 +163,7 @@ export class TecladoComponent implements OnInit {
 
       } else if
         (this.jogada[2] == "O" && this.jogada[5] == "O" && this.jogada[8] == "O") {
-        this.marcaJogadaVencedora(2, 3, 8, "O");
+        this.marcaJogadaVencedora(2, 5, 8, "O");
 
       } else if
         (this.jogada[0] == "O" && this.jogada[4] == "O" && this.jogada[8] == "O") {
@@ -186,7 +186,17 @@ export class TecladoComponent implements OnInit {
   
     }
 
-    
+     
+      //inicializando os vetores
+    for (var counter: number = 0; counter < 9; counter++) {
+
+      this.jogada[counter] = "'";
+      this.marcarReadonly[counter] = false;
+      this.corBotao[counter] = "btn btn-light btn-lg btn-block";
+      this.fim = false;
+
+      console.log("for loop executed : " + counter)
+    }
   
   }
 
