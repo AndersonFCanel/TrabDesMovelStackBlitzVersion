@@ -147,7 +147,7 @@ export class ValidacaoService {
       this.vez = this.vez + 1;
       this.jogada[casaTabuleiro] = "X"
       this.readonly(casaTabuleiro);
-      /this.checarVitoria();
+      //this.checarVitoria();
 
       //this.imprimeCasaMarcada()
 
