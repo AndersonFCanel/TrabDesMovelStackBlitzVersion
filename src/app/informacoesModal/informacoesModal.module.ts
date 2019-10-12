@@ -5,6 +5,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { NgbdModalContent } from './modal-info/modal-content'
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { ModalInputComponent } from './modal-input/modal-input.component';
 
 //import { TecladoComponent } from '../teclado/teclado.component';
 
@@ -12,7 +13,7 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
   //declarations: [ NgbdModalComponent, NgbdModalContent],
-  declarations: [  NgbdModalContent],
+  declarations: [  NgbdModalContent, ModalInputComponent],
   imports: [
     CommonModule,
     BrowserModule, FormsModule, ReactiveFormsModule, HttpClientModule, NgbModule.forRoot(),
