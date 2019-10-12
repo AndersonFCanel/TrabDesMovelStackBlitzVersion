@@ -106,8 +106,10 @@ export class ValidacaoService {
 
     for (var counter: number = 0; counter < 9; counter++) {
       this.MarcarReadonly[counter] = true;
-      this.Fim = true;
     }
+
+    this.Fim = true;
+    this.Vez=0;
 
     if(vencedor=="O"){
       this.pontoPlayer1 ++;

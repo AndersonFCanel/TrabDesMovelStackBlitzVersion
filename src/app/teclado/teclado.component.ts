@@ -64,7 +64,7 @@ open( ) {
 
     this.validacao.marcaJogada(casaTabuleiro);
     
-    if(this.validacaofim)
+    if(this.validacao.fim || this.validacao.Vez == 9)
     {
       this.open();
     }
