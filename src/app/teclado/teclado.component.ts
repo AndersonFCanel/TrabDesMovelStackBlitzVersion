@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { Injectable } from '@angular/core';
 import { ValidacaoService } from '../validacao.service';
+import { NgbModal, NgbActiveModal } from "@ng-bootstrap/ng-bootstrap";
+import { NgbdModalContent } from "../informacoesModal/modal-info/modal-content";
 
 @Injectable({
   providedIn: 'root'
@@ -14,7 +16,6 @@ import { ValidacaoService } from '../validacao.service';
 
 export class TecladoComponent implements OnInit {
 
-
   public jogada;
   public vez;
   public player1;
@@ -25,7 +26,7 @@ export class TecladoComponent implements OnInit {
   public marcarReadonly;
   public corBotao ;
 
-constructor( private  validacao:ValidacaoService ) {
+constructor( private  validacao:ValidacaoService, private  modalService:NgbModal ) {
     this.jogada = this.validacao.Jogada;
     this.vez = this.validacao.Vez;
     this.player1 = this.validacao.Player1;
@@ -35,8 +36,8 @@ constructor( private  validacao:ValidacaoService ) {
     this.fim = this.validacao.Fim;
     this.marcarReadonly = this.validacao.MarcarReadonly;
     this.corBotao = this.validacao.CorBotao;
-
 }
+
 
   ngOnInit() {
 
@@ -52,10 +53,21 @@ constructor( private  validacao:ValidacaoService ) {
 
   }
 
+open( ) {
+    const modalRef = this.modalService.open(NgbdModalContent);
+    modalRef.componentInstance.name = "World";
+  }
+
+
  marcaJogada(casaTabuleiro: number) {
     console.log("vez: " + this.validacao.Vez);
 
     this.validacao.marcaJogada(casaTabuleiro);
+    
+    if(this.validacaofim)
+    {
+      this.open();
+    }
 
  }
   

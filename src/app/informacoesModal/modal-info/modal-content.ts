@@ -1,6 +1,7 @@
 import {Component, Input} from '@angular/core';
 import {NgbModal, NgbActiveModal} from '@ng-bootstrap/ng-bootstrap';
-import { TecladoComponent } from '../../teclado/teclado.component';
+//import { validacaoComponent } from '../../validacao/validacao.component';
+import { ValidacaoService } from '../../validacao.service';
 
 @Component({
   selector: 'ngbd-modal-content',
@@ -12,7 +13,7 @@ import { TecladoComponent } from '../../teclado/teclado.component';
       </button>
     </div>
     <div class="modal-body">
-      <!--<p>Hello,{{name}}!</p>-->
+      
     </div>
     <div class="modal-footer">
       <div class="row">
@@ -31,24 +32,24 @@ import { TecladoComponent } from '../../teclado/teclado.component';
   `
 })
 export class NgbdModalContent {
-  @Input() name ;
+ // @Input() name ;
   
-  constructor(public activeModal: NgbActiveModal , private teclado: TecladoComponent) {
+  constructor(public activeModal: NgbActiveModal, private validacao: ValidacaoService ) {
 
   }  
  
   @Input() restart(reiniciarPartida: boolean) {
       
-    for (var counter: number = 0; counter < 9; counter++) {
+   for (var counter: number = 0; counter < 9; counter++) {
 
-      console.log( this.teclado.jogada[counter]);
-      console.log( this.teclado.marcarReadonly[counter]);
-      console.log( this.teclado.corBotao[counter]);
-      console.log( this.teclado.fim );
+      console.log( this.validacao.jogada[counter]);
+      console.log( this.validacao.marcarReadonly[counter]);
+      console.log( this.validacao.corBotao[counter]);
+      console.log( this.validacao.fim );
 
     }
   
-    this.teclado.restart(false);
+    this.validacao.restart(false);
     
   }
 

@@ -117,7 +117,7 @@ export class ValidacaoService {
       this.Vencedor = "X";
     }
 
-//alert(vencedor + " venceu!");
+  //alert(vencedor + " venceu!");
   }
 
   marcaJogada(casaTabuleiro: number) {
@@ -149,7 +149,6 @@ export class ValidacaoService {
     }
 
   }
-
 
   checarVitoria( ) {
 
@@ -233,10 +232,10 @@ export class ValidacaoService {
       this.Jogada[counter] = "'";
       this.marcarReadonly[counter] = false;
       this.corBotao[counter] = "btn btn-light btn-lg btn-block";
-      this.Fim = false;
-
       console.log("for loop executed : " + counter)
     }
+
+    this.Fim = false;
 
   }
 
