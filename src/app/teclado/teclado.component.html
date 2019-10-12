@@ -1,4 +1,11 @@
+
+ 
+  
 <div class="container">
+
+ <div *ngIf="validacao.fim">
+     <ngbd-modal-component></ngbd-modal-component>
+  </div>   
 
    <!-- <div class="row">
         <div class="col-3" id="playerOne">
@@ -46,7 +53,7 @@
         <br>
         <br>
     </div>
-
+    
     <div class="row">
         <div class="col-3 col-lg-3 ">
         </div>
@@ -141,11 +148,4 @@
                 Partida</button> -->
         </div>
     </div>
-
-    
-    <div *ngIf="validacao.fim">
-     <p>lll</p>
-     <ngbd-modal-component></ngbd-modal-component>
-    </div>
-    
 </div>

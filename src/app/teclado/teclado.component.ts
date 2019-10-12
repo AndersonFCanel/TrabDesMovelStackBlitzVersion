@@ -53,7 +53,7 @@ constructor( private  validacao:ValidacaoService ) {
   }
 
  marcaJogada(casaTabuleiro: number) {
-    console.log("vez: " + this.validacao.vez);
+    console.log("vez: " + this.validacao.Vez);
 
     this.validacao.marcaJogada(casaTabuleiro);
 

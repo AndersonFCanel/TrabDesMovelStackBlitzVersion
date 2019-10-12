@@ -1,7 +1,5 @@
 import {Component, Input} from '@angular/core';
 import {NgbModal, NgbActiveModal} from '@ng-bootstrap/ng-bootstrap';
-//import {AppComponent} from 'src/app/app.component';
-//import { TecladoComponent } from 'src/app/teclado/teclado.component';
 import { TecladoComponent } from '../../teclado/teclado.component';
 
 @Component({
@@ -14,7 +12,7 @@ import { TecladoComponent } from '../../teclado/teclado.component';
       </button>
     </div>
     <div class="modal-body">
-      <p>Hello, {{name}}!</p>
+      <!--<p>Hello,{{name}}!</p>-->
     </div>
     <div class="modal-footer">
       <div class="row">
@@ -33,30 +31,24 @@ import { TecladoComponent } from '../../teclado/teclado.component';
   `
 })
 export class NgbdModalContent {
-  @Input() name;
+  @Input() name ;
   
   constructor(public activeModal: NgbActiveModal , private teclado: TecladoComponent) {
 
   }  
-  ngOnInit() {
-
-   open();
-
-  }
-
+ 
   @Input() restart(reiniciarPartida: boolean) {
-    
-  
-  for (var counter: number = 0; counter < 9; counter++) {
+      
+    for (var counter: number = 0; counter < 9; counter++) {
 
-    console.log( this.teclado.jogada[counter]);
-    console.log( this.teclado.marcarReadonly[counter]);
-    console.log( this.teclado.corBotao[counter]);
-    console.log( this.teclado.fim );
+      console.log( this.teclado.jogada[counter]);
+      console.log( this.teclado.marcarReadonly[counter]);
+      console.log( this.teclado.corBotao[counter]);
+      console.log( this.teclado.fim );
 
-  }
+    }
   
-  this.teclado.restart(false);
+    this.teclado.restart(false);
     
   }
 
