@@ -85,22 +85,6 @@ export class ValidacaoService {
     this.corBotao = value;
   }
 
-
- /* ngOnInit() {
-
-    //inicializando os vetores
-    for (var counter: number = 0; counter < 9; counter++) {
-
-      this.jogada[counter] = "'";
-      this.marcarReadonly[counter] = false;
-      this.corBotao[counter] = "btn btn-light btn-lg btn-block";
-      this.fim = false;
-
-      console.log("for loop executed : " + counter)
-    }
-
-  }*/
-
   readonly(casaTabuleiro: number) {
     this.marcarReadonly[casaTabuleiro] = true;
     this.corBotao[casaTabuleiro] = "btn btn-dark btn-lg btn-block";

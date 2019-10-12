@@ -26,27 +26,26 @@ export class TecladoComponent implements OnInit {
   public corBotao ;
 
 constructor( private  validacao:ValidacaoService ) {
-    this.jogada = this.validacao.jogada;
-    this.vez = this.validacao.vez;
-    this.player1 = this.validacao.player1;
-    this.player2 = this.validacao.player2;
-    this.pontoPlayer1 = this.validacao.pontoPlayer1;
-    this.pontoPlayer2 = this.validacao.pontoPlayer2;
-    this.fim = this.validacao.fim;
-    this.marcarReadonly = this.validacao.marcarReadonly;
-    this.corBotao = this.validacao.corBotao;
+    this.jogada = this.validacao.Jogada;
+    this.vez = this.validacao.Vez;
+    this.player1 = this.validacao.Player1;
+    this.player2 = this.validacao.Player2;
+    this.pontoPlayer1 = this.validacao.PontoPlayer1;
+    this.pontoPlayer2 = this.validacao.PontoPlayer2;
+    this.fim = this.validacao.Fim;
+    this.marcarReadonly = this.validacao.MarcarReadonly;
+    this.corBotao = this.validacao.CorBotao;
 
 }
 
   ngOnInit() {
 
-    
     for (var counter: number = 0; counter < 9; counter++) {
 
-      this.validacao.jogada[counter] = "'";
-      this.validacao.marcarReadonly[counter] = false;
-      this.validacao.corBotao[counter] = "btn btn-light btn-lg btn-block";
-      this.validacao.fim = false;
+      this.validacao.Jogada[counter] = "'";
+      this.validacao.MarcarReadonly[counter] = false;
+      this.validacao.CorBotao[counter] = "btn btn-light btn-lg btn-block";
+      this.validacao.Fim = false;
 
       console.log("for loop executed : " + counter)
     }
