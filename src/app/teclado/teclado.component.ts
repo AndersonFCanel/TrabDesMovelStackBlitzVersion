@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, AfterViewInit, ChangeDetectorRef  } from '@angular/core';
 import { Injectable } from '@angular/core';
 import { ValidacaoService } from '../validacao.service';
 import { NgbModal, NgbActiveModal } from "@ng-bootstrap/ng-bootstrap";
@@ -16,7 +16,7 @@ import { ModalInputComponent } from "../informacoesModal/modal-input/modal-input
   styleUrls: ['./teclado.component.css']
 })
 
-export class TecladoComponent implements OnInit {
+export class TecladoComponent implements OnInit, AfterViewInit {
 
   public jogada;
   public vez;
@@ -28,7 +28,7 @@ export class TecladoComponent implements OnInit {
   public marcarReadonly;
   public corBotao ;
 
-constructor( private  validacao:ValidacaoService, private  modalService:NgbModal ) {
+constructor( private  validacao:ValidacaoService, private  modalService:NgbModal, private cd: ChangeDetectorRef ) {
     this.jogada = this.validacao.Jogada;
     this.vez = this.validacao.Vez;
     this.player1 = this.validacao.Player1;
@@ -52,9 +52,15 @@ constructor( private  validacao:ValidacaoService, private  modalService:NgbModal
       console.log("for loop executed : " + counter)
     }
     
-  this.openInput( );
+  
 
   }
+
+ngAfterViewInit(): void {
+        setTimeout(() => {
+           this.openInput( );
+        });
+    }
 
 openInput( ) {
     const modalRefA = this.modalService.open(  ModalInputComponent);
