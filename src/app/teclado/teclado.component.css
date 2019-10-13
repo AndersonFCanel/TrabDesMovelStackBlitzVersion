@@ -5,3 +5,20 @@
 #entradaValor{
     margin-bottom: 40px;
 }
+
+#p2Pts{
+  text-align: right; 
+}
+
+#p2{
+ text-align: right; 
+}
+
+label{
+  font-family: Franklin Gothic Medium,
+  Franklin Gothic,ITC Fran
+}
+input{
+  font-family: Franklin Gothic Medium,
+  Franklin Gothic,ITC Fran
+}
