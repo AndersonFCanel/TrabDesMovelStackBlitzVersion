@@ -226,6 +226,8 @@ export class ValidacaoService {
     if (reiniciarPartida) {
       this.pontoPlayer1 = 0;
       this.pontoPlayer2 = 0;
+      this.player1 = "";
+    this.player2 = "";
     } 
     
     //inicializando os vetores
@@ -238,9 +240,7 @@ export class ValidacaoService {
     }
 
     this.Fim = false;
-    this.player1 = "";
-    this.player2 = "";
-
+    
   }
 
 }
