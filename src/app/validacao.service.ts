@@ -20,8 +20,8 @@ export class ValidacaoService {
 
   constructor( ) {
       this.vez= 0;
-      this.player1 = "O";
-      this.player2 = "X";
+      this.player1 = "";
+      this.player2 = "";
       this.pontoPlayer1 = 0;
       this.pontoPlayer2 = 0;
       this.fim = false;
@@ -113,10 +113,10 @@ export class ValidacaoService {
 
     if(vencedor=="O"){
       this.pontoPlayer1 ++;
-      this.Vencedor = "O";
+      this.Vencedor = this.Player1;
     }else{
       this.pontoPlayer2 ++;
-      this.Vencedor = "X";
+      this.Vencedor = this.Player2;
     }
 
   //alert(vencedor + " venceu!");
@@ -175,7 +175,7 @@ export class ValidacaoService {
 
     } else if
       (this.Jogada[2] == "X" && this.Jogada[5] == "X" && this.Jogada[8] == "X") {
-      this.marcaJogadaVencedora(2, 3, 8, "X");
+      this.marcaJogadaVencedora(2, 5, 8, "X");
 
     } else if
       (this.Jogada[0] == "X" && this.Jogada[4] == "X" && this.Jogada[8] == "X") {
@@ -206,7 +206,7 @@ export class ValidacaoService {
 
       } else if
         (this.Jogada[2] == "O" && this.Jogada[5] == "O" && this.Jogada[8] == "O") {
-        this.marcaJogadaVencedora(2, 3, 8, "O");
+        this.marcaJogadaVencedora(2, 5, 8, "O");
 
       } else if
         (this.Jogada[0] == "O" && this.Jogada[4] == "O" && this.Jogada[8] == "O") {
