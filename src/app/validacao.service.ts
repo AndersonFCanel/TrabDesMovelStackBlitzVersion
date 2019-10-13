@@ -238,6 +238,8 @@ export class ValidacaoService {
     }
 
     this.Fim = false;
+    this.player1 = "";
+    this.player2 = "";
 
   }
 
