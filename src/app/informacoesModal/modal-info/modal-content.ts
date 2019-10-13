@@ -1,6 +1,5 @@
 import {Component, Input} from '@angular/core';
 import {NgbModal, NgbActiveModal} from '@ng-bootstrap/ng-bootstrap';
-//import { validacaoComponent } from '../../validacao/validacao.component';
 import { ValidacaoService } from '../../validacao.service';
 
 @Component({
@@ -42,10 +41,10 @@ export class NgbdModalContent {
       
    for (var counter: number = 0; counter < 9; counter++) {
 
-      console.log( this.validacao.jogada[counter]);
-      console.log( this.validacao.marcarReadonly[counter]);
-      console.log( this.validacao.corBotao[counter]);
-      console.log( this.validacao.fim );
+      console.log( this.validacao.Jogada[counter]);
+      console.log( this.validacao.MarcarReadonly[counter]);
+      console.log( this.validacao.CorBotao[counter]);
+      console.log( this.validacao.Fim );
 
     }
   

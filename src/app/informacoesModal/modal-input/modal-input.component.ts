@@ -1,15 +1,19 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input } from "@angular/core";
+import { NgbModal, NgbActiveModal } from "@ng-bootstrap/ng-bootstrap";
+import { ValidacaoService } from "../../validacao.service";
 
 @Component({
-  selector: 'app-modal-input',
-  templateUrl: './modal-input.component.html',
-  styleUrls: ['./modal-input.component.css']
+  selector: 'ngbd-modal-input',
+  templateUrl: './modal-input.component.html'
+    
 })
-export class ModalInputComponent implements OnInit {
+export class ModalInputComponent {
+  @Input() name;
 
-  constructor() { }
+  constructor(
+    public activeModal: NgbActiveModal,
+    private validacao: ValidacaoService
+  ) {}
 
-  ngOnInit() {
-  }
-
+  @Input() restart(reiniciarPartida: boolean) {}
 }

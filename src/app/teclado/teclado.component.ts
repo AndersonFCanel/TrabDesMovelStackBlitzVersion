@@ -3,6 +3,8 @@ import { Injectable } from '@angular/core';
 import { ValidacaoService } from '../validacao.service';
 import { NgbModal, NgbActiveModal } from "@ng-bootstrap/ng-bootstrap";
 import { NgbdModalContent } from "../informacoesModal/modal-info/modal-content";
+import { ModalInputComponent } from "../informacoesModal/modal-input/modal-input.component";
+
 
 @Injectable({
   providedIn: 'root'
@@ -47,11 +49,18 @@ constructor( private  validacao:ValidacaoService, private  modalService:NgbModal
       this.validacao.MarcarReadonly[counter] = false;
       this.validacao.CorBotao[counter] = "btn btn-light btn-lg btn-block";
       this.validacao.Fim = false;
-
       console.log("for loop executed : " + counter)
     }
+    
+  this.openInput( );
 
   }
+
+openInput( ) {
+    const modalRefA = this.modalService.open(  ModalInputComponent);
+    modalRefA.componentInstance.name = "1";
+  }
+
 
 open( ) {
     const modalRef = this.modalService.open(NgbdModalContent);
@@ -64,7 +73,7 @@ open( ) {
 
     this.validacao.marcaJogada(casaTabuleiro);
     
-    if(this.validacao.fim || this.validacao.Vez == 9)
+    if(this.validacao.Fim || this.validacao.Vez == 9)
     {
       this.open();
     }
