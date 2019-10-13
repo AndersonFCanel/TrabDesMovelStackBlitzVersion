@@ -1,53 +1,44 @@
 <div>
 	<div class="row">
-		<div class="col-1">
-		</div>
-		<div class="col-3" id="playerOne">
-			<label for="p1">Player One</label>
-		</div>
-
-		<div class="col-2" id="pontoPlayer1">
-			<label for="p1Pts">Score</label>
-		</div>
-
-
-
-		<div class="col-3" id="playerTwo">
-			<label for="p2">Player Two</label>
-		</div>
-
-		<div class="col-2" id="pontoPlayer2">
-			<label for="p2Pts">Score</label>
-		</div>
-		<div class="col-1">
-		</div>
-	</div>
-
-	<div class="row">
-		<div class="col-1">
+		<div class="col-1"></div>
+		<div class="col-2" id="playerOne">
+			<label for="p1">P One:</label>
 		</div>
 		<div class="col-3" id="playerOne">
 			<input type="text" readonly="true" class="form-control" id="p1" value={{validacao.player1}}>
         </div>
-
-			<div class="col-2" id="pontoPlayer1">
-				<input type="text" readonly="true" class="form-control" value={{validacao.pontoPlayer1}} id="p1Pts">
+			<div class="col-2" id="playerTwo">
+				<label for="p2">P Two:</label>
+			</div>
+			<div class="col-3" id="playerTwo">
+				<input type="text" readonly="true" class="form-control" value={{validacao.player2}} id="p2">
         </div>
+				<div class="col-1">
+				</div>
+			</div>
 
 
-				<div class="col-3" id="playerTwo">
-					<input type="text" readonly="true" class="form-control" value={{validacao.player2}} id="p2">
+			<div class="row">
+				<div class="col-1"></div>
+				<div class="col-2" id="playerOne">
+					<label for="p1Pts">Score</label>
+				</div>
+				<div class="col-2" id="playerOne">
+					<input type="text" readonly="true" class="form-control" value={{validacao.pontoPlayer1}} id="p1Pts">
         </div>
-
-					<div class="col-2" id="pontoPlayer2">
+					<div class="col-2" id="playerTwo">
+						<label for="p2Pts">Score</label>
+					</div>
+					<div class="col-2" id="playerTwo">
 						<input type="text" readonly="true" class="form-control" value={{validacao.pontoPlayer2}}
             id="p2Pts">
         </div>
 						<div class="col-1">
 						</div>
 					</div>
+
 					<div class="row">
-						<br>
+
 						<br>
     </div>
 
