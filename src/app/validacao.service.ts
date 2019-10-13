@@ -20,8 +20,8 @@ export class ValidacaoService {
 
   constructor( ) {
       this.vez= 0;
-      this.player1 = "UM";
-      this.player2 = "DOIS";
+      this.player1 = "O";
+      this.player2 = "X";
       this.pontoPlayer1 = 0;
       this.pontoPlayer2 = 0;
       this.fim = false;
