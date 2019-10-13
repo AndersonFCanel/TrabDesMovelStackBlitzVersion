@@ -1,27 +1,23 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { NgbdModalComponent } from './modal-info/modal-info.component';
-
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { NgbdModalContent } from './modal-info/modal-content'
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
-
-//import { TecladoComponent } from '../teclado/teclado.component';
-
-
+import { ModalInputComponent } from './modal-input/modal-input.component';
 
 @NgModule({
-  declarations: [ NgbdModalComponent, NgbdModalContent],
+
+  declarations: [  NgbdModalContent, ModalInputComponent],
   imports: [
     CommonModule,
     BrowserModule, FormsModule, ReactiveFormsModule, HttpClientModule, NgbModule.forRoot(),
-    //TecladoComponent
   ],
   exports: [
-    NgbdModalComponent,
+   ModalInputComponent,
+   NgbdModalContent
   ],
-  entryComponents: [NgbdModalContent],
+  entryComponents: [NgbdModalContent ,ModalInputComponent],
 })
 export class InformacoesModalModule { }

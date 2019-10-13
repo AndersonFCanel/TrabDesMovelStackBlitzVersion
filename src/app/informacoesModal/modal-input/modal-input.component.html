@@ -1,0 +1,55 @@
+<div class="modal-header">
+	<h4 class="modal-title">Entre com Nome dos Jogadores:</h4>
+	<button
+        type="button"
+        class="close"
+        aria-label="Close"
+        (click)="activeModal.dismiss('Cross click')"
+      >
+        <span aria-hidden="true">&times;</span>
+      </button>
+</div>
+<div class="modal-body">
+	<div class="row">
+		<div class="col-3" id="playerOne">
+			<label>P1 - O</label>
+		</div>
+		<div class="col-9" id="playerOne">
+			<input
+          type="text"
+          class="form-control"
+          id="p1"
+          [(ngModel)] = 'validacao.player1'
+        />
+        </div>
+		</div>
+		<div class="row">
+			<br>
+    </div>
+			<div class="row">
+				<div class="col-3" id="playerOne">
+					<label>P2 - X</label>
+				</div>
+				<div class="col-9" id="playerOne">
+					<input
+          type="text"
+          class="form-control"
+          id="p1"
+          [(ngModel)] = 'validacao.player2'
+        />
+        </div>
+				</div>
+				<div class="row">
+					<br>
+        </div>
+
+				</div>
+				<div class="modal-footer">
+					<div class="row">
+						<div class="col-2 col-lg-2 "></div>
+						<div class="col-8 col-lg-8 ">
+							<button (click)="activeModal.dismiss('Cross click')" type="button" class="btn btn-danger btn-lg btn-block">Que Comecem os Jogos!!!</button>
+						</div>
+						<div class="col-2 -lg-2 "></div>
+					</div>
+				</div>
