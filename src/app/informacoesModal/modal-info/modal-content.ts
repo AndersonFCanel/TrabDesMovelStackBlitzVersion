@@ -4,7 +4,7 @@ import { ValidacaoService } from '../../validacao.service';
 
 @Component({
   selector: 'ngbd-modal-content',
-  templateUrl:'./modal-content.ht'
+  templateUrl:'./modal-content.html'
 })
 export class NgbdModalContent {
  // @Input() name ;
@@ -25,6 +25,7 @@ export class NgbdModalContent {
     }
   
     this.validacao.restart(false);
+    this.activeModal.dismiss('Cross click')
     
   }
 
