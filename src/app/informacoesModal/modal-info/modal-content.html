@@ -1,6 +1,6 @@
 <div id="modal-c">
 	<div class="modal-header">
-		<h4 class="modal-title">+ Uma ou Chega?</h4>
+		<h4 class="modal-title">Outra Partida ou Reiniciar Rodada?</h4>
 		<button type="button" class="close" aria-label="Close" (click)="activeModal.dismiss('Cross click')">
         <span aria-hidden="true">&times;</span>
       </button>
@@ -10,7 +10,7 @@
 	</div>
 
 	<div class="modal-footer">
-	
+		<div class="row">
 			<div class="col-5 ">
 				<button (click)="restart(false)" type="button" class="btn btn-warning btn-lg btn-block">+ Uma</button>
 			</div>
@@ -19,6 +19,6 @@
 			<div class="col-5  ">
 				<button (click)="restart(true)" type="button" class="btn btn-danger btn-lg btn-block">Chega!</button>
 			</div>
-		
+		</div>
 	</div>
 </div>
