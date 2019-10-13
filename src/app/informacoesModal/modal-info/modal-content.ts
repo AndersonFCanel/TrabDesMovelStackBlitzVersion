@@ -4,7 +4,8 @@ import { ValidacaoService } from '../../validacao.service';
 
 @Component({
   selector: 'ngbd-modal-content',
-  templateUrl:'./modal-content.html'
+  templateUrl:'./modal-content.html',
+  styleUrls: ['./modal-contentent.css']
 })
 export class NgbdModalContent {
  // @Input() name ;
