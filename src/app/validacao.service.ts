@@ -16,7 +16,7 @@ export class ValidacaoService {
   private marcarReadonly ;
   private corBotao ;
   private vencedor;
- 
+  private empate;
 
   constructor( ) {
       this.vez= 0;
@@ -29,6 +29,7 @@ export class ValidacaoService {
       this.marcarReadonly = [];
       this.corBotao = []; 
       this.vencedor = "";
+      this.empate = false;
    }
 
 
@@ -91,6 +92,12 @@ export class ValidacaoService {
   }
   set Vencedor(value) {
     this.vencedor = value;
+  }
+  get Empate(){
+     return this.vencedor;
+  }
+  set Empate(value) {
+    this.empate = value;
   }
 
   readonly(casaTabuleiro: number) {
