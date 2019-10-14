@@ -127,7 +127,7 @@ export class ValidacaoService {
 
   checaNomeInformados()
   {
-    if(this.Player2.length > 0  && this.Player2.length > 0){
+    if((this.Player2.length > 0 ) && (this.Player2.length > 0)){
       return true;
     }else{
       return false;
@@ -135,7 +135,7 @@ export class ValidacaoService {
   }
 
   dangerClass(){
-    if(this.Player2.length > 0  && this.Player2.length > 0){
+    if((this.Player2.length > 0 ) && ( this.Player2.length > 0 ) ){
       return "form-control";
     }else{
       return "form-control alert alert-danger";
