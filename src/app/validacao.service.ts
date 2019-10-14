@@ -17,6 +17,7 @@ export class ValidacaoService {
   private corBotao;
   private vencedor;
   private empate;
+  private resultadoParcial;
 
   constructor() {
     this.vez = 0;
@@ -30,6 +31,7 @@ export class ValidacaoService {
     this.corBotao = [];
     this.vencedor = "";
     this.empate = false;
+    this.resultadoParcial = "";
   }
 
 
@@ -98,6 +100,29 @@ export class ValidacaoService {
   }
   set Empate(value) {
     this.empate = value;
+  }
+  get ResultadoParcial() {
+    return this.resultadoParcial
+      ;
+  }
+  set ResultadoParcial(value) {
+    this.resultadoParcial
+      = value;
+  }
+
+  ganhando1() {
+    if (this.PontoPlayer1 > this.PontoPlayer2) {
+      return this.ResultadoParcial = "form-control text-success";
+    } else {
+      return this.ResultadoParcial = "form-control text-dark";
+    }
+  }
+  ganhando2() {
+    if (this.PontoPlayer1 < this.PontoPlayer2) {
+      return this.ResultadoParcial = "form-control text-success";
+    } else {
+      return this.ResultadoParcial = "form-control text-dark";
+    }
   }
 
   readonly(casaTabuleiro: number) {

@@ -25,74 +25,74 @@
             <label for="p1Pts"></label>
         </div>
         <div class="col-2">
-            <input type="text" readonly="true" class="form-control" value={{validacao.pontoPlayer1}} id="p1Pts">
+            <input type="text" readonly="true" [class]="validacao.ganhando1()" value={{validacao.pontoPlayer1}} id="p1Pts ">
         </div>
-        <div class="col-4">
+        <div class="col-4 ">
 
         </div>
 
-        <div class="col-2">
-            <input type="text" readonly="true" class="form-control" value={{validacao.pontoPlayer2}} id="p2Pts">
+        <div class="col-2 ">
+            <input type="text " readonly="true " [class]="validacao.ganhando1()" value={{validacao.pontoPlayer2}} id="p2Pts ">
         </div>
-        <div class="col-1">
-            <label for="p2Pts"></label>
+        <div class="col-1 ">
+            <label for="p2Pts "></label>
         </div>
-        <div class="col-1">
+        <div class="col-1 ">
         </div>
     </div>
-    <div class="row rowsp"></div>
-    <div class="row rowsp"></div>
-    <div class="row rowsp"></div>
-    <div class="row rowsp"></div>
-    <div class="paddings-bloco no-margin fonte-btn">
-        <div class="row">
+    <div class="row rowsp "></div>
+    <div class="row rowsp "></div>
+    <div class="row rowsp "></div>
+    <div class="row rowsp "></div>
+    <div class="paddings-bloco no-margin fonte-btn ">
+        <div class="row ">
             <div class="col-3 col-lg-3 ">
             </div>
 
-            <div class="col-2 col-lg-2 border-bottom border-right">
-                <button [disabled]="marcarReadonly[0]" (click)="marcaJogada(0)" type="button" [class]="corBotao[0]">{{jogada[0]}}</button>
+            <div class="col-2 col-lg-2 border-bottom border-right ">
+                <button [disabled]="marcarReadonly[0] " (click)="marcaJogada(0) " type="button " [class]="corBotao[0] ">{{jogada[0]}}</button>
             </div>
-            <div class="col-2 col-lg-2 border-bottom border-right">
-                <button [disabled]="marcarReadonly[1]" (click)="marcaJogada(1)" type="button" [class]="corBotao[1]">{{jogada[1]}}</button>
+            <div class="col-2 col-lg-2 border-bottom border-right ">
+                <button [disabled]="marcarReadonly[1] " (click)="marcaJogada(1) " type="button " [class]="corBotao[1] ">{{jogada[1]}}</button>
             </div>
             <div class="col-2 col-lg-2 border-bottom ">
-                <button [disabled]="marcarReadonly[2]" (click)="marcaJogada(2)" type="button" [class]="corBotao[2]">{{jogada[2]}}</button>
+                <button [disabled]="marcarReadonly[2] " (click)="marcaJogada(2) " type="button " [class]="corBotao[2] ">{{jogada[2]}}</button>
             </div>
             <div class="col-3 col-lg-3 ">
 
             </div>
         </div>
 
-        <div class="row">
+        <div class="row ">
             <div class="col-3 col-lg-3 ">
             </div>
 
-            <div class="col-2 col-lg-2 border-bottom border-right">
-                <button [disabled]="marcarReadonly[3]" (click)="marcaJogada(3)" type="button" [class]="corBotao[3]">{{jogada[3]}}</button>
+            <div class="col-2 col-lg-2 border-bottom border-right ">
+                <button [disabled]="marcarReadonly[3] " (click)="marcaJogada(3) " type="button " [class]="corBotao[3] ">{{jogada[3]}}</button>
             </div>
-            <div class="col-2 col-lg-2 border-bottom border-right">
-                <button [disabled]="marcarReadonly[4]" (click)="marcaJogada(4)" type="button" [class]="corBotao[4]">{{jogada[4]}}</button>
+            <div class="col-2 col-lg-2 border-bottom border-right ">
+                <button [disabled]="marcarReadonly[4] " (click)="marcaJogada(4) " type="button " [class]="corBotao[4] ">{{jogada[4]}}</button>
             </div>
-            <div class="col-2 col-lg-2 border-bottom">
-                <button [disabled]="marcarReadonly[5]" (click)="marcaJogada(5)" type="button" [class]="corBotao[5]">{{jogada[5]}}</button>
+            <div class="col-2 col-lg-2 border-bottom ">
+                <button [disabled]="marcarReadonly[5] " (click)="marcaJogada(5) " type="button " [class]="corBotao[5] ">{{jogada[5]}}</button>
             </div>
             <div class="col-3 col-lg-3 ">
 
             </div>
         </div>
 
-        <div class="row">
-            <div class="col-3 col-lg-3  ">
+        <div class="row ">
+            <div class="col-3 col-lg-3 ">
             </div>
 
-            <div class="col-2 col-lg-2  border-right">
-                <button [disabled]="marcarReadonly[6]" (click)="marcaJogada(6)" type="button" [class]="corBotao[6]">{{jogada[6]}}</button>
+            <div class="col-2 col-lg-2 border-right ">
+                <button [disabled]="marcarReadonly[6] " (click)="marcaJogada(6) " type="button " [class]="corBotao[6] ">{{jogada[6]}}</button>
             </div>
-            <div class=" col-2 col-lg-2  border-right">
-                <button [disabled]=" marcarReadonly[7]" (click)="marcaJogada(7)" type="button" [class]="corBotao[7]">{{jogada[7]}}</button>
+            <div class=" col-2 col-lg-2 border-right ">
+                <button [disabled]=" marcarReadonly[7] " (click)="marcaJogada(7) " type="button " [class]="corBotao[7] ">{{jogada[7]}}</button>
             </div>
-            <div class="col-2 col-lg-2  ">
-                <button [disabled]="marcarReadonly[8]" (click)="marcaJogada(8)" type="button" [class]="corBotao[8]">{{jogada[8]}}</button>
+            <div class="col-2 col-lg-2 ">
+                <button [disabled]="marcarReadonly[8] " (click)="marcaJogada(8) " type="button " [class]="corBotao[8] ">{{jogada[8]}}</button>
             </div>
             <div class="col-3 col-lg-3 ">
 
@@ -100,28 +100,28 @@
         </div>
 
     </div>
-    <div class="row rowsp"></div>
-    <div class="row rowsp"></div>
-    <div class="row rowsp"></div>
-    <div class="row rowsp fonte">
-        <div class="col-1  ">
+    <div class="row rowsp "></div>
+    <div class="row rowsp "></div>
+    <div class="row rowsp "></div>
+    <div class="row rowsp fonte ">
+        <div class="col-1 ">
         </div>
-        <div class="col-3  ">
-            <button (click)="restart(false)" type="button" class="btn btn-warning btn-lg btn-block">Clear</button>
+        <div class="col-3 ">
+            <button (click)="restart(false) " type="button " class="btn btn-warning btn-lg btn-block ">Clear</button>
         </div>
-        <div class="col-2  ">
+        <div class="col-2 ">
         </div>
         <div class="col-1 ">
         </div>
         <div class="col-3 ">
-            <button (click)="restart(true)" type="button" class="btn btn-danger btn-lg btn-block">Reset</button>
+            <button (click)="restart(true) " type="button " class="btn btn-danger btn-lg btn-block ">Reset</button>
         </div>
-        <div class="col-1"></div>
+        <div class="col-1 "></div>
         <div class="col-1 ">
         </div>
     </div>
 
 </div>
-<div class="row rowsp"></div>
-<div class="row rowsp"></div>
-<div class="row rowsp"></div>
+<div class="row rowsp "></div>
+<div class="row rowsp "></div>
+<div class="row rowsp "></div>
