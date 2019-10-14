@@ -135,7 +135,7 @@ export class ValidacaoService {
   }
 
   dangerClass(){
-    if(this.Player2.length > 0  && this.Player2.length){
+    if(this.Player2.length > 0  && this.Player2.length > 0){
       return "form-control";
     }else{
       return "form-control alert alert-danger";
