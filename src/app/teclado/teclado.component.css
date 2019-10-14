@@ -22,3 +22,20 @@ input{
   font-family: Franklin Gothic Medium,
   Franklin Gothic,ITC Fran
 }
+
+.paddings-bloco{
+padding-bottom: 10px;
+padding-top: 10px;
+}
+
+.border-right{
+border-right: 2px solid;
+}
+
+.border-bottom{
+border-bottom: 2px solid;
+}
+
+.no-margin{
+margin-top: 0px;
+}

@@ -87,9 +87,9 @@ open( ) {
  }
   
   public restart(reiniciarPartida: boolean) {
-
+    
    this.validacao.restart(reiniciarPartida);
-  
+
   }
 
 

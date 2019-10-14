@@ -16,5 +16,8 @@ export class ModalInputComponent {
     private validacao: ValidacaoService
   ) {}
 
-  @Input() restart(reiniciarPartida: boolean) {}
+  @Input() restart(reiniciarPartida: boolean) {
+
+    this.validacao.restart(reiniciarPartida);
+  }
 }
