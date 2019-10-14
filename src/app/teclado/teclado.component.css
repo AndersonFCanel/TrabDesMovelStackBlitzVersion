@@ -18,17 +18,21 @@ input {
     font-family: Franklin Gothic Medium, Franklin Gothic, ITC Fran
 }
 
+.fonte {
+    font-family: Franklin Gothic Medium, Franklin Gothic, ITC Fran
+}
+
 .paddings-bloco {
     padding-bottom: 10px;
     padding-top: 10px;
 }
 
 .border-right {
-    border-right: 2px solid;
+    border-right: 5px black solid;
 }
 
 .border-bottom {
-    border-bottom: 2px solid;
+    border-bottom: 5px black solid;
 }
 
 .no-margin {
