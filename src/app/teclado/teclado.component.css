@@ -1,41 +1,36 @@
-.row{
-    margin-top: 8px;
+.rowsp {
+    margin-top: 10px;
 }
 
-#entradaValor{
-    margin-bottom: 40px;
+#p2Pts {
+    text-align: right;
 }
 
-#p2Pts{
-  text-align: right; 
+#p2 {
+    text-align: right;
 }
 
-#p2{
- text-align: right; 
+label {
+    font-family: Franklin Gothic Medium, Franklin Gothic, ITC Fran
 }
 
-label{
-  font-family: Franklin Gothic Medium,
-  Franklin Gothic,ITC Fran
-}
-input{
-  font-family: Franklin Gothic Medium,
-  Franklin Gothic,ITC Fran
+input {
+    font-family: Franklin Gothic Medium, Franklin Gothic, ITC Fran
 }
 
-.paddings-bloco{
-padding-bottom: 10px;
-padding-top: 10px;
+.paddings-bloco {
+    padding-bottom: 10px;
+    padding-top: 10px;
 }
 
-.border-right{
-border-right: 2px solid;
+.border-right {
+    border-right: 2px solid;
 }
 
-.border-bottom{
-border-bottom: 2px solid;
+.border-bottom {
+    border-bottom: 2px solid;
 }
 
-.no-margin{
-margin-top: 0px;
+.no-margin {
+    margin-top: 0px;
 }

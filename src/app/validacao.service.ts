@@ -6,95 +6,95 @@ import { Injectable } from '@angular/core';
 
 export class ValidacaoService {
 
-  private vez ;
-  private player1 ;
-  private player2 ;
-  private pontoPlayer1 ;
-  private pontoPlayer2 ;
-  private fim ;
-  private jogada ;
-  private marcarReadonly ;
-  private corBotao ;
+  private vez;
+  private player1;
+  private player2;
+  private pontoPlayer1;
+  private pontoPlayer2;
+  private fim;
+  private jogada;
+  private marcarReadonly;
+  private corBotao;
   private vencedor;
   private empate;
 
-  constructor( ) {
-      this.vez= 0;
-      this.player1 = "";
-      this.player2 = "";
-      this.pontoPlayer1 = 0;
-      this.pontoPlayer2 = 0;
-      this.fim = false;
-      this.jogada = [];
-      this.marcarReadonly = [];
-      this.corBotao = []; 
-      this.vencedor = "";
-      this.empate = false;
-   }
+  constructor() {
+    this.vez = 0;
+    this.player1 = "";
+    this.player2 = "";
+    this.pontoPlayer1 = 0;
+    this.pontoPlayer2 = 0;
+    this.fim = false;
+    this.jogada = [];
+    this.marcarReadonly = [];
+    this.corBotao = [];
+    this.vencedor = "";
+    this.empate = false;
+  }
 
 
-  get Vez(){
-     return this.vez;
+  get Vez() {
+    return this.vez;
   }
   set Vez(value: Number) {
     this.vez = value;
   }
-   get Player1(){
-     return this.player1;
+  get Player1() {
+    return this.player1;
   }
   set Player1(value: String) {
     this.player1 = value;
   }
-   get Player2(){
-     return this.player1;
+  get Player2() {
+    return this.player1;
   }
   set Player2(value: String) {
     this.player2 = value;
   }
-   get PontoPlayer1(){
-     return this.pontoPlayer1;
+  get PontoPlayer1() {
+    return this.pontoPlayer1;
   }
   set PontoPlayer1(value: Number) {
     this.pontoPlayer1 = value;
   }
-   get PontoPlayer2(){
-     return this.pontoPlayer2;
+  get PontoPlayer2() {
+    return this.pontoPlayer2;
   }
   set PontoPlayer2(value: Number) {
     this.pontoPlayer2 = value;
   }
- get Fim(){
-     return this.fim;
+  get Fim() {
+    return this.fim;
   }
   set Fim(value: Boolean) {
     this.fim = value;
   }
-  get Jogada(){
-     return this.jogada;
+  get Jogada() {
+    return this.jogada;
   }
   set Jogada(value) {
     this.jogada = value;
   }
-  get MarcarReadonly(){
-     return this.marcarReadonly;
+  get MarcarReadonly() {
+    return this.marcarReadonly;
   }
   set MarcarReadonly(value) {
     this.marcarReadonly = value;
   }
-  get CorBotao(){
-     return this.corBotao;
+  get CorBotao() {
+    return this.corBotao;
   }
   set CorBotao(value) {
     this.corBotao = value;
   }
-   get Vencedor(){
-     return this.vencedor;
+  get Vencedor() {
+    return this.vencedor;
   }
   set Vencedor(value) {
     this.vencedor = value;
   }
-  get Empate(){
-     return this.empate;
+  get Empate() {
+    return this.empate;
   }
   set Empate(value) {
     this.empate = value;
@@ -116,17 +116,17 @@ export class ValidacaoService {
     }
 
     this.Fim = true;
-    this.Vez=0;
+    this.Vez = 0;
 
-    if(vencedor=="O"){
-      this.pontoPlayer1 ++;
+    if (vencedor == "O") {
+      this.pontoPlayer1++;
       this.Vencedor = this.Player1;
-    }else{
-      this.pontoPlayer2 ++;
+    } else {
+      this.pontoPlayer2++;
       this.Vencedor = this.Player2;
     }
 
-  //alert(vencedor + " venceu!");
+    //alert(vencedor + " venceu!");
   }
 
   marcaJogada(casaTabuleiro: number) {
@@ -159,7 +159,7 @@ export class ValidacaoService {
 
   }
 
-  checarVitoria( ) {
+  checarVitoria() {
 
     if (this.Jogada[0] == "X" && this.Jogada[1] == "X" && this.Jogada[2] == "X") {
       this.marcaJogadaVencedora(0, 1, 2, "X");
@@ -224,10 +224,10 @@ export class ValidacaoService {
 
       } else {
         console.log("Ainda não há vencedor");
-        if(this.Vez == 8){
-          this.Empate = true; 
+        if (this.Vez == 8) {
+          this.Empate = true;
         }
-        
+
       }
   }
 
@@ -238,8 +238,8 @@ export class ValidacaoService {
       this.PontoPlayer2 = 0;
       this.Player1 = "";
       this.Player2 = "";
-    } 
-    
+    }
+
     //inicializando os vetores
     for (var counter: number = 0; counter < 9; counter++) {
 
@@ -253,7 +253,7 @@ export class ValidacaoService {
     this.Vez = 0;
     this.Vencedor = "";
     this.Empate = false;
-    
+
   }
 
 }
