@@ -134,14 +134,21 @@ export class ValidacaoService {
     }
   }
 
-  dangerClass(){
-    if((this.Player2.length > 0 ) && ( this.Player2.length > 0 ) ){
+  dangerClass1(){
+    if(this.Player1.length > 0 ){
       return "form-control";
     }else{
       return "form-control alert alert-danger";
     }
   }
 
+  dangerClass2(){
+    if(this.Player2.length > 0 ){
+      return "form-control";
+    }else{
+      return "form-control alert alert-danger";
+    }
+  }
   readonly(casaTabuleiro: number) {
     this.MarcarReadonly[casaTabuleiro] = true;
     this.CorBotao[casaTabuleiro] = "btn btn-dark btn-lg btn-block";
