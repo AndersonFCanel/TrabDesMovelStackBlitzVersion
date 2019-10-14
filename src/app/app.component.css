@@ -1,6 +1,8 @@
-#titulo{
-   text-align: center; 
-   font-family: Franklin Gothic Medium
-   ,Franklin Gothic,ITC Fran
+h3 {
+    font-family: Franklin Gothic Medium, Franklin Gothic, ITC Fran;
+    font-size: 15px;
+    text-align: center;
+    color: antiquewhite;
+    padding-bottom: 20px;
+    padding-top: 20px;
 }
-
