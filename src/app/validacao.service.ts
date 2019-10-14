@@ -173,9 +173,8 @@ export class ValidacaoService {
 
 
   marcaJogada(casaTabuleiro: number) {
-    console.log("vez: " + this.vez);
+
     this.Vez = this.vez + 1;
-    console.log("Casa marcada " + casaTabuleiro);
 
     if (this.vez % 2 == 0) {
       this.Jogada[casaTabuleiro] = "X"
