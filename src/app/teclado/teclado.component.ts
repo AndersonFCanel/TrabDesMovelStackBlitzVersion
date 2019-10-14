@@ -1,4 +1,4 @@
-import { Component, OnInit, AfterViewInit, ChangeDetectorRef  } from '@angular/core';
+import { Component, OnInit, AfterViewInit, ChangeDetectorRef } from '@angular/core';
 import { Injectable } from '@angular/core';
 import { ValidacaoService } from '../validacao.service';
 import { NgbModal, NgbActiveModal } from "@ng-bootstrap/ng-bootstrap";
@@ -21,14 +21,14 @@ export class TecladoComponent implements OnInit, AfterViewInit {
   public jogada;
   public vez;
   public player1;
-  public player2 ;
-  public pontoPlayer1 ;
-  public pontoPlayer2 ;
-  public fim ;
+  public player2;
+  public pontoPlayer1;
+  public pontoPlayer2;
+  public fim;
   public marcarReadonly;
-  public corBotao ;
+  public corBotao;
 
-constructor( private  validacao:ValidacaoService, private  modalService:NgbModal, private cd: ChangeDetectorRef ) {
+  constructor(private validacao: ValidacaoService, private modalService: NgbModal, private cd: ChangeDetectorRef) {
     this.jogada = this.validacao.Jogada;
     this.vez = this.validacao.Vez;
     this.player1 = this.validacao.Player1;
@@ -38,7 +38,7 @@ constructor( private  validacao:ValidacaoService, private  modalService:NgbModal
     this.fim = this.validacao.Fim;
     this.marcarReadonly = this.validacao.MarcarReadonly;
     this.corBotao = this.validacao.CorBotao;
-}
+  }
 
 
   ngOnInit() {
@@ -51,44 +51,44 @@ constructor( private  validacao:ValidacaoService, private  modalService:NgbModal
       this.validacao.Fim = false;
       console.log("for loop executed : " + counter)
     }
-    
-  
 
   }
 
-ngAfterViewInit(): void {
-        setTimeout(() => {
-           this.openInput( );
-        });
-    }
+  ngAfterViewInit(): void {
+    setTimeout(() => {
+      this.openInput();
+    });
+  }
 
-openInput( ) {
-    const modalRefA = this.modalService.open(  ModalInputComponent);
-    modalRefA.componentInstance.name = "1";
+  openInput() {
+    const modalRefA = this.modalService.open(ModalInputComponent);
+    modalRefA.componentInstance.name = "World";
   }
 
 
-open( ) {
+  open() {
     const modalRef = this.modalService.open(NgbdModalContent);
     modalRef.componentInstance.name = "World";
   }
 
 
- marcaJogada(casaTabuleiro: number) {
+  marcaJogada(casaTabuleiro: number) {
     console.log("vez: " + this.validacao.Vez);
 
     this.validacao.marcaJogada(casaTabuleiro);
-    
-    if(this.validacao.Fim || this.validacao.Vez == 9)
-    {
+
+    if (this.validacao.Fim || this.validacao.Vez == 9) {
       this.open();
     }
 
- }
-  
+  }
+
   public restart(reiniciarPartida: boolean) {
-    
-   this.validacao.restart(reiniciarPartida);
+
+    this.validacao.restart(reiniciarPartida);
+    if (reiniciarPartida) {
+      this.openInput();
+    }
 
   }
 

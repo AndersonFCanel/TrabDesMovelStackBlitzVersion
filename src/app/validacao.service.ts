@@ -20,8 +20,8 @@ export class ValidacaoService {
 
   constructor() {
     this.vez = 0;
-    this.player1 = "";
-    this.player2 = "";
+    this.player1 = "O";
+    this.player2 = "X";
     this.pontoPlayer1 = 0;
     this.pontoPlayer2 = 0;
     this.fim = false;
@@ -46,7 +46,7 @@ export class ValidacaoService {
     this.player1 = value;
   }
   get Player2() {
-    return this.player1;
+    return this.player2;
   }
   set Player2(value: String) {
     this.player2 = value;
@@ -117,6 +117,7 @@ export class ValidacaoService {
 
     this.Fim = true;
     this.Vez = 0;
+    this.Empate = false;
 
     if (vencedor == "O") {
       this.pontoPlayer1++;
@@ -131,30 +132,20 @@ export class ValidacaoService {
 
   marcaJogada(casaTabuleiro: number) {
     console.log("vez: " + this.vez);
+    this.Vez = this.vez + 1;
+    console.log("Casa marcada " + casaTabuleiro);
 
     if (this.vez % 2 == 0) {
-      console.log("Casa marcada " + casaTabuleiro);
-
-      this.Vez = this.vez + 1;
       this.Jogada[casaTabuleiro] = "O"
       this.readonly(casaTabuleiro);
       this.checarVitoria();
-
-      //this.imprimeCasaMarcada()
-
-      return this.jogada;
+      return this.Jogada;
     }
     else {
-      console.log("Casa marcada " + casaTabuleiro);
-
-      this.Vez = this.vez + 1;
       this.Jogada[casaTabuleiro] = "X"
       this.readonly(casaTabuleiro);
       this.checarVitoria();
-
-      //this.imprimeCasaMarcada()
-
-      return this.jogada;
+      return this.Jogada;
     }
 
   }
@@ -236,8 +227,8 @@ export class ValidacaoService {
     if (reiniciarPartida) {
       this.PontoPlayer1 = 0;
       this.PontoPlayer2 = 0;
-      this.Player1 = "";
-      this.Player2 = "";
+      this.Player1 = "O";
+      this.Player2 = "X";
     }
 
     //inicializando os vetores

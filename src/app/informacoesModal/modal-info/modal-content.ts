@@ -8,7 +8,7 @@ import { ValidacaoService } from '../../validacao.service';
   styleUrls: ['./modal-content.css']
 })
 export class NgbdModalContent {
-  // @Input() name ;
+  @Input() name;
 
   constructor(public activeModal: NgbActiveModal, private validacao: ValidacaoService) {
 
@@ -26,7 +26,7 @@ export class NgbdModalContent {
     }
 
     this.validacao.restart(reiniciarPartida);
-    this.activeModal.dismiss('Cross click')
+    this.activeModal.dismiss('Cross click');
 
   }
 
