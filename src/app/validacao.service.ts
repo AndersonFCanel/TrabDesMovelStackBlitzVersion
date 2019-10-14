@@ -161,13 +161,13 @@ export class ValidacaoService {
     console.log("Casa marcada " + casaTabuleiro);
 
     if (this.vez % 2 == 0) {
-      this.Jogada[casaTabuleiro] = "O"
+      this.Jogada[casaTabuleiro] = "X"
       this.readonly(casaTabuleiro);
       this.checarVitoria();
       return this.Jogada;
     }
     else {
-      this.Jogada[casaTabuleiro] = "X"
+      this.Jogada[casaTabuleiro] = "O"
       this.readonly(casaTabuleiro);
       this.checarVitoria();
       return this.Jogada;
@@ -239,7 +239,7 @@ export class ValidacaoService {
         this.marcaJogadaVencedora(2, 4, 6, "O");
 
       } else {
-        console.log("Ainda não há vencedor");
+        //console.log("Ainda não há vencedor");
         if (this.Vez == 8) {
           this.Empate = true;
         }
@@ -256,13 +256,12 @@ export class ValidacaoService {
       this.Player2 = "X";
     }
 
-    //inicializando os vetores
     for (var counter: number = 0; counter < 9; counter++) {
 
       this.Jogada[counter] = "'";
       this.marcarReadonly[counter] = false;
       this.corBotao[counter] = "btn btn-light btn-lg btn-block";
-      console.log("for loop executed : " + counter)
+     //console.log("for loop executed : " + counter)
     }
 
     this.Fim = false;

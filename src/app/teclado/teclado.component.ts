@@ -49,7 +49,7 @@ export class TecladoComponent implements OnInit, AfterViewInit {
       this.validacao.MarcarReadonly[counter] = false;
       this.validacao.CorBotao[counter] = "btn btn-light btn-lg btn-block";
       this.validacao.Fim = false;
-      console.log("for loop executed : " + counter)
+      //console.log("for loop executed : " + counter)
     }
 
   }
@@ -73,7 +73,7 @@ export class TecladoComponent implements OnInit, AfterViewInit {
 
 
   marcaJogada(casaTabuleiro: number) {
-    console.log("vez: " + this.validacao.Vez);
+   // console.log("vez: " + this.validacao.Vez);
 
     this.validacao.marcaJogada(casaTabuleiro);
 
