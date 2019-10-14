@@ -76,6 +76,7 @@ export class TecladoComponent implements OnInit, AfterViewInit {
    
    if(!this.validacao.checaNomeInformados()){
       this.openInput();
+      return;
     }
 
     this.validacao.marcaJogada(casaTabuleiro);
