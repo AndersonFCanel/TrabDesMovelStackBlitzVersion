@@ -1,3 +1,4 @@
+
 <div id="modal-input">
     <div class="modal-header">
         <h4 class="modal-title">Entre com Nome dos Jogadores:</h4>
@@ -6,12 +7,13 @@
         </button>
     </div>
     <div class="modal-body">
+    
         <div class="row">
             <div class="col-3" id="playerOne">
                 <label>P1 - O</label>
             </div>
             <div class="col-9" id="playerOne">
-                <input type="text" class="form-control" id="p1" [(ngModel)]='validacao.player1' required />
+                <input type="text" [class]="validacao.dangerClass()" id="p1" [(ngModel)]='validacao.Player1' required />
             </div>
         </div>
         <div class="row">
@@ -22,19 +24,20 @@
                 <label>P2 - X</label>
             </div>
             <div class="col-9" id="playerOne">
-                <input type="text" class="form-control" id="p1" [(ngModel)]='validacao.player2' required />
+                <input type="text" [class]="validacao.dangerClass()" id="p1" [(ngModel)]='validacao.Player2' required />
             </div>
         </div>
-
     </div>
 
     <br>
     <div class="modal-footer">
         <div class="col-1 "></div>
-        <div class="col-10 ">
-            <button (click)="activeModal.dismiss('Cross click')" type="button" class="btn btn-danger btn-lg btn-block">Que Comecem os Jogos!!!</button>
+        <div class="col-10" *ngIf="validacao.checaNomeInformados()" >
+            <button (click)="activeModal.dismiss('Cross click')" type="button" class="btn btn-success  btn-lg btn-block">Que os Jogos Comecem!!!</button>
         </div>
+
         <div class="col-1 "></div>
     </div>
 
 </div>
+
