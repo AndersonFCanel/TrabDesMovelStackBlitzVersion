@@ -127,7 +127,7 @@ export class ValidacaoService {
 
   checaNomeInformados()
   {
-    if((this.Player2.length > 0 ) && (this.Player2.length > 0)){
+    if((this.Player1.length > 0 ) && (this.Player2.length > 0)){
       return true;
     }else{
       return false;
