@@ -16,14 +16,14 @@ export class NgbdModalContent {
 
   @Input() restart(reiniciarPartida: boolean) {
 
-    for (var counter: number = 0; counter < 9; counter++) {
+    /*for (var counter: number = 0; counter < 9; counter++) {
 
       console.log(this.validacao.Jogada[counter]);
       console.log(this.validacao.MarcarReadonly[counter]);
       console.log(this.validacao.CorBotao[counter]);
       console.log(this.validacao.Fim);
 
-    }
+    }*/
 
     this.validacao.restart(reiniciarPartida);
     this.activeModal.dismiss('Cross click');

@@ -8,7 +8,7 @@ import { InformacoesModule } from './informacoes/informacoes.module';
 import { AlertModule, ButtonsModule } from 'ngx-bootstrap';
 
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
-
+import { ValidacaoService } from './validacao.service';
 
 import { InformacoesModalModule } from './informacoesModal/informacoesModal.module';
 
@@ -26,7 +26,7 @@ import { InformacoesModalModule } from './informacoesModal/informacoesModal.modu
     InformacoesModule,
     InformacoesModalModule
   ],
-  providers: [],
+  providers: [ValidacaoService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
