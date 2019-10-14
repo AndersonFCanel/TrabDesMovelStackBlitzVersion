@@ -14,7 +14,7 @@ export class ModalInputComponent {
   constructor(
     public activeModal: NgbActiveModal,
     private validacao: ValidacaoService
-  ) {}
+  ) { }
 
   @Input() restart(reiniciarPartida: boolean) {
 
