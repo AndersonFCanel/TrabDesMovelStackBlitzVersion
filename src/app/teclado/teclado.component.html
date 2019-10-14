@@ -1,18 +1,18 @@
 <div>
     <div class="row rowsp">
        
-        <div class="col-2">
-            <label for="p1">&nbsp&nbsp&nbspP1 - O</label>
+        <div class="col-2" >
+            <label for="p1">P1 - O</label>
         </div>
         <div class="col-4">
             <input type="text" readonly="true" class="form-control" id="p1" value={{validacao.player1}}>
         </div>
 
         <div class="col-4">
-            <input type="text" readonly="true" class="form-control" value={{validacao.player2}} id="p2">
+            <input type="text" readonly="true" class="form-control alignR" value={{validacao.player2}} id="p2">
         </div>
-        <div class="col-2">
-            <label for="p2">&nbsp&nbsp&nbspP2 - X </label>
+        <div class="col-2 alignL">
+            <label for="p2">P2 - X</label>
         </div>
        
     </div>
@@ -31,7 +31,7 @@
         </div>
 
         <div class="col-3 ">
-            <input type="text " readonly="true " [class]="validacao.ganhando2()" value={{validacao.pontoPlayer2}} id="p2Pts ">
+            <input type="text " readonly="true " [class]="validacao.ganhando2()" value={{validacao.pontoPlayer2}} >
         </div>
         <div class="col-1 ">
             <label for="p2Pts "></label>

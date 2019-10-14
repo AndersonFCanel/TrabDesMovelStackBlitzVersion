@@ -2,12 +2,12 @@
     margin-top: 13px;
 }
 
-#p2Pts {
+.alignR {
     text-align: right;
 }
 
-#p2 {
-    text-align: right;
+.alignL {
+    text-align: left;
 }
 
 label {

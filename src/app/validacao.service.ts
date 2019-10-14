@@ -119,9 +119,9 @@ export class ValidacaoService {
   }
   ganhando2() {
     if (this.PontoPlayer1 < this.PontoPlayer2) {
-      return this.ResultadoParcial = "form-control p-3 mb-2 bg-success text-white";
+      return this.ResultadoParcial = "form-control p-3 mb-2 bg-success text-white alignR";
     } else {
-      return this.ResultadoParcial = "form-control text-dark";
+      return this.ResultadoParcial = "form-control text-dark alignR";
     }
   }
 
