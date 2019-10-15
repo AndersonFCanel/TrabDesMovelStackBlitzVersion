@@ -11,6 +11,10 @@
      color: #aaa;
  }
  
+ .border-danger {
+     border: 2px red;
+ }
+ 
  .simple-container {
      max-width: 675px;
      margin: 0 auto;

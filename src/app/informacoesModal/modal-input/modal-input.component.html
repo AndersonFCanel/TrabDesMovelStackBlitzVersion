@@ -1,5 +1,4 @@
-
-<div id="modal-input">
+<div id="modal-input" class="body-modal">
     <div class="modal-header">
         <h4 class="modal-title">Entre com Nome dos Jogadores:</h4>
         <button type="button" class="close" aria-label="Close" (click)="activeModal.dismiss('Cross click')">
@@ -7,7 +6,7 @@
         </button>
     </div>
     <div class="modal-body">
-    
+
         <div class="row">
             <div class="col-3" id="playerOne">
                 <label>P1 - O</label>
@@ -29,10 +28,9 @@
         </div>
     </div>
 
-    <br>
     <div class="modal-footer">
         <div class="col-1 "></div>
-        <div class="col-10" *ngIf="validacao.checaNomeInformados()" >
+        <div class="col-10" *ngIf="validacao.checaNomeInformados()">
             <button (click)="activeModal.dismiss('Cross click')" type="button" class="btn btn-success  btn-lg btn-block">Que os Jogos Comecem!!!</button>
         </div>
 
@@ -40,4 +38,3 @@
     </div>
 
 </div>
-

@@ -138,7 +138,7 @@ export class ValidacaoService {
     if(this.Player1.length > 0 ){
       return "form-control";
     }else{
-      return "form-control alert alert-danger";
+      return "form-control alert alert-danger border-danger";
     }
   }
 
@@ -146,7 +146,7 @@ export class ValidacaoService {
     if(this.Player2.length > 0 ){
       return "form-control";
     }else{
-      return "form-control alert alert-danger";
+      return "form-control alert alert-danger border-danger";
     }
   }
   readonly(casaTabuleiro: number) {
