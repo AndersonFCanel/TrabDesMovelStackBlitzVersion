@@ -1,4 +1,9 @@
 #modal-c {
     text-align: center;
-    font-family: Franklin Gothic Medium, Franklin Gothic, ITC Fran
+    font-family: Franklin Gothic Medium, Franklin Gothic, ITC Fran;
+    line-height: 1.75em;
+    font-size: 16px;
+    background-color: #222;
+    color: rgb(126, 126, 223);
 }
+
