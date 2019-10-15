@@ -196,7 +196,7 @@ export class ValidacaoService {
     this.Vez = this.vez + 1;
 
     if (this.vez % 2 == 0) {
-      if( this.DaVez  == "X"){
+      if( this.DaVez  == "X" && this.Vez == 0){
          this.Jogada[casaTabuleiro] = "X";
          }
       else{
@@ -208,7 +208,7 @@ export class ValidacaoService {
       return this.Jogada;
     }
     else {
-      if( this.DaVez  == "O"){
+      if( this.DaVez  == "O" && this.Vez == 0){
         this.Jogada[casaTabuleiro] = "O";
         }
       else{
