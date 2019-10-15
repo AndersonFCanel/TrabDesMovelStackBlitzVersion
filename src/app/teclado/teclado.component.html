@@ -5,11 +5,11 @@
             <label for="p1">P1-O</label>
         </div>
         <div class="col-4">
-            <input type="text" readonly="true" class="p-3 mb-2 bg-dark text-white form-control" id="p1" value={{validacao.player1}}>
+            <input type="text" readonly="true" class="p-3 mb-2 bg-dark text-white form-control borderRoxa" id="p1" value={{validacao.player1}}>
         </div>
 
         <div class="col-4">
-            <input type="text" readonly="true" class="p-3 mb-2 bg-dark text-white form-control alignR" value={{validacao.player2}} id="p2">
+            <input type="text" readonly="true" class="p-3 mb-2 bg-dark text-white form-control alignR borderRoxa" value={{validacao.player2}} id="p2">
         </div>
         <div class="col-2 alignL">
             <label for="p2">P2-X</label>
@@ -43,7 +43,7 @@
     <div class="row rowsp "></div>
     <div class="row rowsp "></div>
     <div class="row rowsp "></div>
-    <div class="paddings-bloco no-margin fonte-btn ">
+    <div class="paddings-bloco no-margin fonte-btn  ">
         <div class="row ">
             <div class="col-3">
             </div>
@@ -101,22 +101,20 @@
     </div>
     <div class="row rowsp "></div>
     <div class="row rowsp "></div>
-    <div class="row rowsp "></div>
-    <div class="row rowsp fonte ">
+    <div class="row rowsp  ">
         <div class="col-1 ">
         </div>
         <div class="col-3 ">
-            <button (click)="restart(false) " type="button " class="btn btn-secondary  btn-circle btn-xl text-warning btn-block ">Clear</button>
+            <button (click)="restart(false) " type="button " class="btn btn-secondary  btn-circle btn-xl text-warning btn-block borderRoxa">Clear</button>
         </div>
         <div class="col-4 "></div>
         <div class="col-3 d-flex align-items-end flex-column">
-            <button (click)="restart(true) " type="button " class="btn btn-secondary btn-circle btn-xl text-danger btn-block ">Reset</button>
+            <button (click)="restart(true) " type="button " class="btn btn-secondary btn-circle btn-xl text-danger btn-block borderRoxa">Reset</button>
         </div>
         <div class="col-1 "></div>
 
     </div>
 
 </div>
-<div class="row rowsp "></div>
 <div class="row rowsp "></div>
 <div class="row rowsp "></div>

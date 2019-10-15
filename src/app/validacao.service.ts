@@ -114,14 +114,14 @@ export class ValidacaoService {
     if (this.PontoPlayer1 > this.PontoPlayer2) {
       return this.ResultadoParcial = "form-control p-3 mb-2 bg-success text-white";
     } else {
-      return this.ResultadoParcial = "form-control p-3 mb-2 bg-dark text-white";
+      return this.ResultadoParcial = "form-control p-3 mb-2 bg-dark text-white borderRoxa";
     }
   }
   ganhando2() {
     if (this.PontoPlayer1 < this.PontoPlayer2) {
-      return this.ResultadoParcial = "form-control p-3 mb-2 bg-success text-white alignR";
+      return this.ResultadoParcial = "form-control p-3 mb-2 bg-success text-white alignR ";
     } else {
-      return this.ResultadoParcial = "form-control p-3 mb-2 bg-dark text-white alignR";
+      return this.ResultadoParcial = "form-control p-3 mb-2 bg-dark text-white alignR borderRoxa";
     }
   }
 

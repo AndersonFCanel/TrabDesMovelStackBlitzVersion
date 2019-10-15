@@ -10,16 +10,8 @@
     text-align: left;
 }
 
-label {
-    font-family: Franklin Gothic Medium, Franklin Gothic, ITC Fran
-}
-
-input {
-    font-family: Franklin Gothic Medium, Franklin Gothic, ITC Fran
-}
-
-.fonte {
-    font-family: Franklin Gothic Medium, Franklin Gothic, ITC Fran
+.borderRoxa {
+    border: 3px solid rgb(35, 6, 70);
 }
 
 .paddings-bloco {
@@ -28,13 +20,11 @@ input {
 }
 
 .border-right {
-    border-right: 15px black solid;
-    border-right-color: black;
+    border-right: 15px solid;
 }
 
 .border-bottom {
-    border-bottom: 15px black solid;
-    border-bottom-color: black;
+    border-bottom: 15px solid;
 }
 
 .no-margin {
