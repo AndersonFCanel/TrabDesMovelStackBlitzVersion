@@ -195,30 +195,39 @@ export class ValidacaoService {
 
     this.Vez = this.vez + 1;
 
+if( this.DaVez  == "X" ){
     if (this.vez % 2 == 0) {
-      if( this.DaVez  == "X" && this.Vez == 0){
-         this.Jogada[casaTabuleiro] = "X";
-         }
-      else{
-          this.Jogada[casaTabuleiro] = "O";
-          }
-
+     
+      this.Jogada[casaTabuleiro] = "X";
       this.readonly(casaTabuleiro);
       this.checarVitoria();
       return this.Jogada;
     }
     else {
-      if( this.DaVez  == "O" && this.Vez == 0){
-        this.Jogada[casaTabuleiro] = "O";
-        }
-      else{
-        this.Jogada[casaTabuleiro] = "X";
-        }
-
+    
+      this.Jogada[casaTabuleiro] = "O";
       this.readonly(casaTabuleiro);
       this.checarVitoria();
       return this.Jogada;
     }
+ }else{
+ 
+ if (this.vez % 2 == 0) {
+     
+      this.Jogada[casaTabuleiro] = "O";
+      this.readonly(casaTabuleiro);
+      this.checarVitoria();
+      return this.Jogada;
+    }
+    else {
+    
+      this.Jogada[casaTabuleiro] = "X";
+      this.readonly(casaTabuleiro);
+      this.checarVitoria();
+      return this.Jogada;
+    }
+ 
+ }
  
   }
 
