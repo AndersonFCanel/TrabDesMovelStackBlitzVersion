@@ -182,35 +182,31 @@ export class ValidacaoService {
   marcaJogada(casaTabuleiro: number) {
 
     this.Vez = this.vez + 1;
- if(this.PontoPlayer1 >= this.PontoPlayer2 )
- {
+ 
     if (this.vez % 2 == 0) {
-      this.Jogada[casaTabuleiro] = "X"
+      
+      if(this.PontoPlayer1 >= this.PontoPlayer2 )
+        {
+           this.Jogada[casaTabuleiro] = "X"
+        }else{
+          this.Jogada[casaTabuleiro] = "O"
+        }
       this.readonly(casaTabuleiro);
       this.checarVitoria();
       return this.Jogada;
     }
     else {
-      this.Jogada[casaTabuleiro] = "O"
+       if(this.PontoPlayer1 >= this.PontoPlayer2 )
+        {
+           this.Jogada[casaTabuleiro] = "O"
+        }else{
+          this.Jogada[casaTabuleiro] = "X"
+        }
       this.readonly(casaTabuleiro);
       this.checarVitoria();
       return this.Jogada;
     }
- }else
- {
-   if (this.vez % 2 == 0) {
-      this.Jogada[casaTabuleiro] = "X"
-      this.readonly(casaTabuleiro);
-      this.checarVitoria();
-      return this.Jogada;
-    }
-    else {
-      this.Jogada[casaTabuleiro] = "O"
-      this.readonly(casaTabuleiro);
-      this.checarVitoria();
-      return this.Jogada;
- }
-  }
+ 
   }
 
   checarVitoria() {
