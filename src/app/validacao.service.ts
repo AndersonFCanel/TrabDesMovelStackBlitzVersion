@@ -196,20 +196,24 @@ export class ValidacaoService {
     this.Vez = this.vez + 1;
 
     if (this.vez % 2 == 0) {
-      if( this.daVez  == "X"){
-      this.Jogada[casaTabuleiro] = "X";}
+      if( this.DaVez  == "X"){
+         this.Jogada[casaTabuleiro] = "X";
+         }
       else{
-      this.Jogada[casaTabuleiro] = "O";}
+          this.Jogada[casaTabuleiro] = "O";
+          }
 
       this.readonly(casaTabuleiro);
       this.checarVitoria();
       return this.Jogada;
     }
     else {
-      if( this.daVez  == "O"){
-      this.Jogada[casaTabuleiro] = "O";}
+      if( this.DaVez  == "O"){
+        this.Jogada[casaTabuleiro] = "O";
+        }
       else{
-      this.Jogada[casaTabuleiro] = "X";}
+        this.Jogada[casaTabuleiro] = "X";
+        }
 
       this.readonly(casaTabuleiro);
       this.checarVitoria();
