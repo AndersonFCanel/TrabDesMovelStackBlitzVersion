@@ -18,7 +18,7 @@ export class ValidacaoService {
   private vencedor;
   private empate;
   private resultadoParcial;
-  public daVez = "X";
+  private daVez = "X";
 
   constructor() {
     this.vez = 0;
@@ -33,6 +33,7 @@ export class ValidacaoService {
     this.vencedor = "";
     this.empate = false;
     this.resultadoParcial = "";
+    this.DaVez = "X";
   }
 
 
@@ -110,6 +111,14 @@ export class ValidacaoService {
     this.resultadoParcial
       = value;
   }
+  get DaVez() {
+    return this.daVez
+      ;
+  }
+  set DaVez(value) {
+    this.daVez
+      = value;
+  }
 
   ganhando1() {
     if (this.PontoPlayer1 > this.PontoPlayer2) {
@@ -172,11 +181,11 @@ export class ValidacaoService {
     if (vencedor == "O") {
       this.pontoPlayer1++;
       this.Vencedor = this.Player1;
-      this.daVez = "O";
+      this.DaVez = "O";
     } else {
       this.pontoPlayer2++;
       this.Vencedor = this.Player2;
-      this.daVez = "X";
+      this.DaVez = "X";
     }
 
   }
@@ -185,8 +194,6 @@ export class ValidacaoService {
   marcaJogada(casaTabuleiro: number) {
 
     this.Vez = this.vez + 1;
-    
-   
 
     if (this.vez % 2 == 0) {
       if( this.daVez  == "X"){
@@ -203,6 +210,7 @@ export class ValidacaoService {
       this.Jogada[casaTabuleiro] = "O";}
       else{
       this.Jogada[casaTabuleiro] = "X";}
+
       this.readonly(casaTabuleiro);
       this.checarVitoria();
       return this.Jogada;
@@ -298,7 +306,7 @@ export class ValidacaoService {
 
     this.Fim = false;
     this.Vez = 0;
-   // this.Vencedor = "";
+    this.Vencedor = "";
     this.Empate = false;
 
   }
