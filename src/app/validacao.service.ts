@@ -136,17 +136,17 @@ export class ValidacaoService {
 
   dangerClass1(){
     if(this.Player1.length > 0 ){
-      return "form-control";
+      return "form-control bg-dark text-white borderRoxa";
     }else{
-      return "form-control alert alert-danger border-danger";
+      return "form-control alert alert-danger border-danger bg-dark text-white";
     }
   }
 
   dangerClass2(){
     if(this.Player2.length > 0 ){
-      return "form-control";
+      return "form-control bg-dark text-white borderRoxa";
     }else{
-      return "form-control alert alert-danger border-danger";
+      return "form-control alert alert-danger border-danger bg-dark text-white ";
     }
   }
   readonly(casaTabuleiro: number) {

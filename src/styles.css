@@ -1,63 +1,92 @@
- * {
-     -webkit-box-sizing: border-box;
-     box-sizing: border-box;
- }
- 
+.tit{
+  color:  rgb(17, 17, 17);
+  border-bottom: 1px solid rgb(35, 6, 70);
+  border-top: 1px solid rgb(35, 6, 70);
+
+}
+
  body {
      font-family: Franklin Gothic Medium, Franklin Gothic, ITC Fran;
      line-height: 1.75em;
      font-size: 16px;
-     background-color: #222;
-     color: #aaa;
+     background-color: rgba(0, 0, 0, 0.950);
  }
  
  .border-danger {
      border: 3px solid red;
  }
  
- .simple-container {
-     max-width: 675px;
-     margin: 0 auto;
-     padding-top: 70px;
-     padding-bottom: 20px;
- }
- 
- .simple-print {
-     fill: white;
-     stroke: white;
- }
- 
- .simple-print svg {
-     height: 100%;
- }
- 
- .simple-close {
-     color: white;
-     border-color: white;
- }
- 
- .simple-ext-info {
-     border-top: 1px solid #aaa;
- }
- 
- p {
-     font-size: 16px;
- }
- 
- h1 {
-     font-size: 30px;
-     line-height: 34px;
- }
- 
- h2 {
-     font-size: 20px;
-     line-height: 25px;
- }
+.rowsp {
+    margin-top: 13px;
+}
+
+.alignR {
+    text-align: right;
+}
+
+.alignL {
+    text-align: left;
+}
+
+.borderRoxa {
+    border: 3px solid rgb(35, 6, 70);
+}
+.backCinza {
+     background:rgb(51, 50, 50)   ;
+     color: backCinza;
+}
+
+.borderOuro {
+    border: 3px solid gold;
+}
+
+.paddings-bloco {
+    padding-bottom: 5px;
+    padding-top: 5px;
+}
+
+.border-right {
+    border-right: 3px solid rgb(35, 6, 70);
+}
+
+.border-bottom {
+    border-bottom: 3px solid rgb(35, 6, 70);
+}
+
+.no-margin {
+    margin-top: 0px;
+}
+
+.fonte-btn {
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+}
+
+.btn-circle.btn-xl {
+    width: 90px;
+    height: 90px;
+    padding: 10px 16px;
+    font-size: 24px;
+    line-height: 1.33;
+    border-radius: 50px;
+    text-align: center;
+}
+
+.btn-circle.btn-lg {
+    width: 50px;
+    height: 50px;
+    padding: 10px 16px;
+    font-size: 18px;
+    line-height: 1.33;
+    border-radius: 25px;
+    text-align: center;
+}
+
  
  h3 {
-     font-size: 16px;
+     font-size: 18px;
      line-height: 27px;
      padding-top: 15px;
+     text-align: center;
      padding-bottom: 15px;
      border-bottom: 1px solid rgb(35, 6, 70);
      border-top: 1px solid rgb(35, 6, 70);
@@ -72,21 +101,17 @@
  }
  
  a[href] {
-     color: #1e8ad6;
+     color: #685699;
  }
  
  a[href]:hover {
-     color: #3ba0e6;
+     color: #023457;
  }
  
- img {
-     max-width: 100%;
+.textoL{
+     color: #685699;
  }
- 
- li {
-     line-height: 1.5em;
- }
- 
+
  aside,
  [class *="sidebar"],
  [id *="sidebar"] {
@@ -96,8 +121,4 @@
      padding: 5px 15px;
  }
  
- @media (min-width: 1921px) {
-     body {
-         font-size: 18px;
-     }
- }
+ 
