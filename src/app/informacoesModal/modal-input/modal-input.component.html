@@ -23,18 +23,18 @@
                 <label>P2 - X</label>
             </div>
             <div class="col-9" id="playerOne">
-                <input type="text" [class]="validacao.dangerClass2()" id="p1" [(ngModel)]='validacao.Player2' required />
+                <input type="text" [class]="validacao.dangerClass2()" id="p1" [(ngModel)]='validacao.Player2' />
             </div>
         </div>
     </div>
 
     <div class="modal-footer">
-        <div class="col-1 "></div>
-        <div class="col-10" *ngIf="validacao.checaNomeInformados()">
-            <button (click)="activeModal.dismiss('Cross click')" type="button" class="btn btn-success  btn-lg btn-block">Que os Jogos Comecem!!!</button>
+        <div class="col-2 "></div>
+        <div class="col-8 d-flex align-items-center flex-column" *ngIf="validacao.checaNomeInformados()">
+            <button (click)="activeModal.dismiss('Cross click')" type="button" class="btn btn-success  btn-circle btn-xl btn-block borderRoxa text-dark">Start</button>
         </div>
 
-        <div class="col-1 "></div>
+        <div class="col-2 "></div>
     </div>
 
 </div>

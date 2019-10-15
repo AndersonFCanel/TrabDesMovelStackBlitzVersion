@@ -6,3 +6,17 @@
     background-color: #222;
     color: rgb(126, 126, 223);
 }
+
+.borderRoxa {
+    border: 3px solid rgb(35, 6, 70);
+}
+
+.btn-circle.btn-xl {
+    width: 90px;
+    height: 90px;
+    padding: 10px 16px;
+    font-size: 24px;
+    line-height: 1.33;
+    border-radius: 50px;
+    text-align: center;
+}
