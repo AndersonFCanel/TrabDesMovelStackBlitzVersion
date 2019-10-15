@@ -14,17 +14,21 @@
     border: 3px solid rgb(35, 6, 70);
 }
 
+.borderOuro {
+    border: 3px solid gold;
+}
+
 .paddings-bloco {
     padding-bottom: 10px;
     padding-top: 10px;
 }
 
 .border-right {
-    border-right: 15px solid;
+    border-right: 3px solid rgb(35, 6, 70);
 }
 
 .border-bottom {
-    border-bottom: 15px solid;
+    border-bottom: 3px solid rgb(35, 6, 70);
 }
 
 .no-margin {
