@@ -195,7 +195,7 @@ export class ValidacaoService {
 
     this.Vez = this.vez + 1;
 
-if( this.DaVez  == "X" ){
+if( this.DaVez  == "O" ){
     if (this.vez % 2 == 0) {
      
       this.Jogada[casaTabuleiro] = "X";
