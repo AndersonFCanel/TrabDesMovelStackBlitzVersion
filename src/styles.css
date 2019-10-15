@@ -113,5 +113,19 @@
      border: 3px solid rgb(35, 6, 70);
      padding: 5px 15px;
  }
- 
- 
+
+
+ .btn-color-clear{
+   color: rgba(255, 217, 0, 0.637);
+   background-color: rgba(24, 23, 23, 0.616)
+}
+
+.btn-color-Reset{
+   color: red;
+   background-color: rgba(24, 23, 23, 0.616)
+}
+
+.btn-color-teclado{
+   color: rgb(85, 5, 72);
+   background-color: rgba(24, 23, 23, 0.616)
+}
