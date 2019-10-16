@@ -294,7 +294,7 @@ if( this.DaVez  == "O" ){
         this.marcaJogadaVencedora(2, 4, 6, "O");
 
       } else {
-        if (this.Vez == 8) {
+        if (this.Vez == 9) {
           this.Empate = true;
         }
 
