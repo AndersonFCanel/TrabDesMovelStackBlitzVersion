@@ -124,14 +124,14 @@ export class ValidacaoService {
     if (this.PontoPlayer1 > this.PontoPlayer2) {
       return this.ResultadoParcial = "form-control p-3 mb-2 bg-success text-white borderOuro";
     } else {
-      return this.ResultadoParcial = "form-control p-3 mb-2 bg-dark text-white borderRoxa";
+      return this.ResultadoParcial = "form-control p-3 mb-2  borderRoxa";
     }
   }
   ganhando2() {
     if (this.PontoPlayer1 < this.PontoPlayer2) {
       return this.ResultadoParcial = "form-control p-3 mb-2 bg-success text-white alignR borderOuro";
     } else {
-      return this.ResultadoParcial = "form-control p-3 mb-2 bg-dark text-white alignR borderRoxa";
+      return this.ResultadoParcial = "form-control p-3 mb-2 alignR borderRoxa";
     }
   }
 
@@ -146,17 +146,17 @@ export class ValidacaoService {
 
   dangerClass1(){
     if(this.Player1.length > 0 ){
-      return "form-control bg-dark text-white borderRoxa";
+      return "form-control  borderRoxa";
     }else{
-      return "form-control alert alert-danger border-danger bg-dark text-white";
+      return "form-control alert alert-danger border-danger ";
     }
   }
 
   dangerClass2(){
     if(this.Player2.length > 0 ){
-      return "form-control bg-dark text-white borderRoxa";
+      return "form-control  borderRoxa";
     }else{
-      return "form-control alert alert-danger border-danger bg-dark text-white ";
+      return "form-control alert alert-danger border-danger  ";
     }
   }
   readonly(casaTabuleiro: number) {
