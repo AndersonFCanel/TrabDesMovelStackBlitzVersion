@@ -3,11 +3,9 @@
     font-family: Franklin Gothic Medium, Franklin Gothic, ITC Fran;
     line-height: 1.75em;
     font-size: 16px;
-    background-color: #222;
+    background-color: rgb(15, 15, 15);
     color: rgb(126, 126, 223);
 }
-
-
 
 .btn-circle.btn-xl {
     width: 90px;
@@ -17,4 +15,9 @@
     line-height: 1.33;
     border-radius: 50px;
     text-align: center;
+}
+
+.btn-color-start {
+    color: rgba(3, 156, 3, 0.979);
+    background-color: rgba(24, 23, 23, 0.616);
 }
