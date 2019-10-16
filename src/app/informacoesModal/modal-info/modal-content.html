@@ -1,17 +1,19 @@
 <div id="modal-c">
     <div class="modal-header">
-        <h4 class="modal-title">Outra Partida ou Reiniciar Rodada?</h4>
+     
+        <div *ngIf="validacao.Empate">
+            Deu Velha!!!
+        </div>
+        <div *ngIf="!validacao.Empate">
+            <h4>{{validacao.Vencedor}} é o vencedor desta partida!</h4>
+        </div>
+
         <button type="button" class="close" aria-label="Close" (click)="activeModal.dismiss('Cross click')">
 			<span aria-hidden="true">&times;</span>
 		</button>
     </div>
     <div class="modal-body">
-        <div *ngIf="validacao.Empate">
-            Deu Velha!!!
-        </div>
-        <div *ngIf="!validacao.Empate">
-            {{validacao.Vencedor}} é o vencedor desta partida!
-        </div>
+          <h4 class="modal-title">Que tal mais uma ?</h4>
     </div>
     <div class="modal-footer">
         <div class="col-sm-3 col-sm-5 "></div>
