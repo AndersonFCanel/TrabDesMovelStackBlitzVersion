@@ -9,6 +9,10 @@
  footer{
    font-family: Franklin Gothic Medium,
    Franklin Gothic,ITC Fran;
+ clear: both;
+    position: absolute; /*Força o rodapé sempre para o fim da página*/
+    bottom: 0;          /*Força o rodapé sempre para o fim da página*/
+    width: 100%;
  }
 
  .tit {
