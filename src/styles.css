@@ -31,6 +31,10 @@
      border: 3px solid rgb(35, 6, 70);
  }
  
+ .borderRoxaTeclado {
+     border: 1px solid rgb(35, 6, 70);
+ }
+ 
  .borderOuro {
      border: 3px solid gold;
  }
@@ -54,7 +58,7 @@
  }
  
  .no-margin {
-     margin-top: 0px;
+     margin-top: 1px;
  }
  
  .fonte-btn {
@@ -128,7 +132,7 @@
  }
  
  .btn-color-teclado-marcado {
-     color: rgb(170, 0, 142);
+     color: rgb(197, 5, 149);
      background-color: rgba(24, 23, 23, 0.616);
  }
  

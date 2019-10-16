@@ -161,7 +161,7 @@ export class ValidacaoService {
   }
   readonly(casaTabuleiro: number) {
     this.MarcarReadonly[casaTabuleiro] = true;
-    this.CorBotao[casaTabuleiro] = "btn btn-color-teclado-marcado btn-lg btn-block";
+    this.CorBotao[casaTabuleiro] = "btn btn-color-teclado-marcado btn-lg btn-block borderRoxaTeclado";
   }
 
   marcaJogadaVencedora(posicao1: number, posicao2: number, posicao3: number, vencedor: String) {
