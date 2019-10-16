@@ -56,11 +56,11 @@ input[type=text]{
  }
  
  .border-rightC {
-    border: 3px solid rgb(139, 68, 197);
+     border-right: 3px solid rgb(139, 68, 197);
  }
  
  .border-bottomC {
-    border: 3px solid rgb(139, 68, 197);
+     border-bottom: 3px solid rgb(139, 68, 197);
  }
  
  .paddings-bloco {
