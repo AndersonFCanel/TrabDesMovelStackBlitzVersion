@@ -190,7 +190,6 @@ export class ValidacaoService {
 
   }
 
-
   marcaJogada(casaTabuleiro: number) {
 
     this.Vez = this.vez + 1;

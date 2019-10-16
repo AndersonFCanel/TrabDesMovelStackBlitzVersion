@@ -118,15 +118,7 @@ input[type=text]{
       color: rgb(148, 148, 219);
  }
  
- aside,
- [class *="sidebar"],
- [id *="sidebar"] {
-     max-width: 90%;
-     margin: 0 auto;
-     border: 3px solid rgb(35, 6, 70);
-     padding: 5px 15px;
- }
- 
+
  .btn-color-clear { 
      color: rgba(255, 217, 0, 0.993);
      background-color: rgba(24, 23, 23, 0.616);
@@ -147,6 +139,19 @@ input[type=text]{
      color: rgb(255, 0, 191);
      background-color: rgba(24, 23, 23, 0.616);
  }
+
+ .btn-color-teclado:hover{
+    font-weight:bold;
+     color: rgb(255, 0, 191);
+     background-color: rgba(24, 23, 23, 0.616);
+}
+
+.btn-color-teclado:focus{
+     font-weight:bold;
+     color: rgb(255, 0, 191);
+     background-color: rgba(24, 23, 23, 0.616);
+ }
+
  
  .color-input {
      color: rgb(175, 96, 161);
