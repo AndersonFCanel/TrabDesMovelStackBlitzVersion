@@ -152,6 +152,18 @@ input[type=text]{
      background-color: rgba(24, 23, 23, 0.616);
  }
 
+  .btn-color-teclado-marcado:hover{
+    font-weight:bold;
+     color: rgb(255, 0, 191);
+     background-color: rgba(24, 23, 23, 0.616);
+}
+
+.btn-color-teclado-marcado:focus{
+     font-weight:bold;
+     color: rgb(255, 0, 191);
+     background-color: rgba(24, 23, 23, 0.616);
+ }
+
  
  .color-input {
      color: rgb(175, 96, 161);
