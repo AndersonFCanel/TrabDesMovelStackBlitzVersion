@@ -314,7 +314,7 @@ if( this.DaVez  == "O" ){
     for (var counter: number = 0; counter < 9; counter++) {
       this.Jogada[counter] = "'";
       this.marcarReadonly[counter] = false;
-      this.corBotao[counter] = "btn color-teclado  btn-lg btn-block";
+      this.corBotao[counter] = "btn btn-color-teclado btn-lg btn-block";
     }
 
     this.Fim = false;
