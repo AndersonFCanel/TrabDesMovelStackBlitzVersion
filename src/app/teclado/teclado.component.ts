@@ -71,7 +71,7 @@ export class TecladoComponent implements OnInit, AfterViewInit {
   }
 
   clicDivteclado(){
-     if(this.validacao.Fim){
+     if(this.validacao.Fim || this.validacao.Empate){
       this.open();
       return;
     }
