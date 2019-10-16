@@ -70,6 +70,13 @@ export class TecladoComponent implements OnInit, AfterViewInit {
     modalRef.componentInstance.name = "World";
   }
 
+  clicDivteclado(){
+     if(this.validacao.Fim){
+      this.open();
+      return;
+    }
+  }
+
 
   marcaJogada(casaTabuleiro: number) {
    
