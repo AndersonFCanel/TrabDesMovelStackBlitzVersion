@@ -39,7 +39,7 @@ input[type=text]{
  }
  
  .borderRoxa {
-     border: 3px solid rgb(88, 24, 177);
+     border: 3px solid rgb(139, 68, 197);
  }
  
  .borderRoxaTeclado {
@@ -56,11 +56,11 @@ input[type=text]{
  }
  
  .border-rightC {
-     border-right: 3px solid rgb(101, 38, 189);
+    border: 3px solid rgb(139, 68, 197);
  }
  
  .border-bottomC {
-     border-bottom: 3px solid rgb(101, 38, 189);
+    border: 3px solid rgb(139, 68, 197);
  }
  
  .paddings-bloco {
@@ -200,6 +200,6 @@ input[type=text]{
  }
  
  .jogada-vencedora {
-     color: rgb(255, 208, 0);
-     background-color: rgb(11, 77, 2);
+     color: rgb(255, 196, 0);
+     background-color: rgb(14, 114, 1);
  }
