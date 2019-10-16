@@ -14,6 +14,7 @@
  footer{
    font-family: Franklin Gothic Medium,
    Franklin Gothic,ITC Fran;
+   font-size: 12px;
 
  }
 
@@ -129,7 +130,7 @@ input[type=text]{
  .textoL {
       color: rgb(148, 148, 219);
  }
- 
+
 
  .btn-color-clear { 
      /* flex para alinhar conteúdo*/
