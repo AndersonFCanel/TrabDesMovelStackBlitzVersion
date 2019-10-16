@@ -39,11 +39,11 @@ input[type=text]{
  }
  
  .borderRoxa {
-     border: 3px solid rgb(35, 6, 70);
+     border: 3px solid rgb(88, 24, 177);
  }
  
  .borderRoxaTeclado {
-     border: 1px solid rgb(35, 6, 70);
+     border: 1px solid rgb(142, 50, 255);
  }
  
  .borderOuro {
@@ -56,11 +56,11 @@ input[type=text]{
  }
  
  .border-rightC {
-     border-right: 3px solid rgb(85, 27, 165);
+     border-right: 3px solid rgb(101, 38, 189);
  }
  
  .border-bottomC {
-     border-bottom: 3px solid rgb(85, 27, 165);
+     border-bottom: 3px solid rgb(101, 38, 189);
  }
  
  .paddings-bloco {
@@ -97,17 +97,17 @@ input[type=text]{
  }
  
  h3 {
-     font-size: 18px;
+     font-size: 20px;
      line-height: 27px;
      padding-top: 15px;
      text-align: center;
      padding-bottom: 15px;
-     border-bottom: 5px solid rgb(35, 6, 70);
-     border-top: 5px solid rgb(35, 6, 70);
+     border-bottom: 5px solid rgb(56, 20, 100);
+     border-top: 5px solid rgb(56, 20, 100);
  }
  
  a[href] {
-     color: rgb(148, 148, 219);
+     color: rgb(165, 165, 238);
  }
  
  a[href]:hover {
@@ -144,12 +144,12 @@ input[type=text]{
  
  .btn-color-teclado-marcado {
      font-weight:bold;
-     color: rgb(197, 5, 149);
+     color: rgb(255, 0, 191);
      background-color: rgba(24, 23, 23, 0.616);
  }
  
  .color-input {
-     color: rgb(133, 77, 123);
+     color: rgb(175, 96, 161);
      background-color: rgba(24, 23, 23, 0.616);
  }
  
