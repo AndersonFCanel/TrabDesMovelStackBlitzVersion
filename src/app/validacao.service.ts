@@ -161,14 +161,14 @@ export class ValidacaoService {
   }
   readonly(casaTabuleiro: number) {
     this.MarcarReadonly[casaTabuleiro] = true;
-    this.CorBotao[casaTabuleiro] = "btn btn-dark btn-lg btn-block";
+    this.CorBotao[casaTabuleiro] = "btn btn-color-teclado-marcado btn-lg btn-block";
   }
 
   marcaJogadaVencedora(posicao1: number, posicao2: number, posicao3: number, vencedor: String) {
 
-    this.CorBotao[posicao1] = "btn btn-success btn-lg btn-block";
-    this.CorBotao[posicao2] = "btn btn-success btn-lg btn-block";
-    this.CorBotao[posicao3] = "btn btn-success btn-lg btn-block";
+    this.CorBotao[posicao1] = "btn jogada-vencedora btn-lg btn-block";
+    this.CorBotao[posicao2] = "btn jogada-vencedora btn-lg btn-block";
+    this.CorBotao[posicao3] = "btn jogada-vencedora btn-lg btn-block";
 
     for (var counter: number = 0; counter < 9; counter++) {
       this.MarcarReadonly[counter] = true;
@@ -314,7 +314,7 @@ if( this.DaVez  == "O" ){
     for (var counter: number = 0; counter < 9; counter++) {
       this.Jogada[counter] = "'";
       this.marcarReadonly[counter] = false;
-      this.corBotao[counter] = "btn btn-dark  text-dark  btn-lg btn-block";
+      this.corBotao[counter] = "btn color-teclado  btn-lg btn-block";
     }
 
     this.Fim = false;

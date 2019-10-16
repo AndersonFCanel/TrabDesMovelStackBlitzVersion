@@ -47,7 +47,7 @@ export class TecladoComponent implements OnInit, AfterViewInit {
 
       this.validacao.Jogada[counter] = "'";
       this.validacao.MarcarReadonly[counter] = false;
-      this.validacao.CorBotao[counter] = "btn btn-dark  text-dark  btn-lg btn-block";
+      this.validacao.CorBotao[counter] = "btn btn-color-teclado btn-lg btn-block";
       this.validacao.Fim = false;
     }
 
