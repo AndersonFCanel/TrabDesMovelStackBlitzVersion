@@ -120,47 +120,74 @@ input[type=text]{
  
 
  .btn-color-clear { 
-     text-align: center;
+     /* flex para alinhar conteúdo*/
+   display: flex;
+   justify-content: center;
+   align-items: center;
      color: rgba(255, 217, 0, 0.993);
      background-color: rgba(24, 23, 23, 0.616);
  }
  
  .btn-color-Reset {
-     text-align: center;
+    /* flex para alinhar conteúdo*/
+   display: flex;
+   justify-content: center;
+   align-items: center;
      color: red;
      background-color: rgba(24, 23, 23, 0.616);
  }
  
  .btn-color-teclado {
+   vertical-align: middle;
      color: rgba(24, 23, 23, 0.616);
      background-color: rgba(24, 23, 23, 0.616);
  }
  
  .btn-color-teclado-marcado {
+   /* flex para alinhar conteúdo*/
+   display: flex;
+   justify-content: center;
+   align-items: center;
      font-weight:bold;
      color: rgb(255, 0, 191);
      background-color: rgba(24, 23, 23, 0.616);
  }
 
  .btn-color-teclado:hover{
+   /* flex para alinhar conteúdo*/
+   display: flex;
+   justify-content: center;
+   align-items: center;
     font-weight:bold;
      color: rgb(255, 0, 191);
      background-color: rgba(24, 23, 23, 0.616);
 }
 
 .btn-color-teclado:focus{
+ /* flex para alinhar conteúdo*/
+   display: flex;
+   justify-content: center;
+   align-items: center;
      font-weight:bold;
      color: rgb(255, 0, 191);
      background-color: rgba(24, 23, 23, 0.616);
  }
 
   .btn-color-teclado-marcado:hover{
+    /* flex para alinhar conteúdo*/
+   display: flex;
+   justify-content: center;
+   align-items: center;
     font-weight:bold;
      color: rgb(255, 0, 191);
      background-color: rgba(24, 23, 23, 0.616);
 }
 
 .btn-color-teclado-marcado:focus{
+ /* flex para alinhar conteúdo*/
+   display: flex;
+   justify-content: center;
+   align-items: center;
      font-weight:bold;
      color: rgb(255, 0, 191);
      background-color: rgba(24, 23, 23, 0.616);
