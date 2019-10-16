@@ -200,6 +200,6 @@ input[type=text]{
  }
  
  .jogada-vencedora {
-     color: rgb(255, 238, 0);
-     background-color: rgb(20, 172, 0);
+     color: gold;
+     background-color: greenyellow);
  }
