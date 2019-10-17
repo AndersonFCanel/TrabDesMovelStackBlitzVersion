@@ -89,12 +89,12 @@
  }
  
  .btn-circle.btn-xl {
-     width: 90px;
-     height: 90px;
+     width: 81px;
+     height: 81px;
      padding: 10px 16px;
-     font-size: 24px;
+     font-size: 21px;
      line-height: 1.33;
-     border-radius: 50px;
+     border-radius: 45px;
      text-align: center;
  }
  
