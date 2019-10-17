@@ -12,7 +12,7 @@
                 <label>P1 - O</label>
             </div>
             <div class="col-9" id="playerOne">
-                <input type="text" [class]="validacao.dangerClass1()" id="p1" [(ngModel)]='validacao.Player1' required />
+                <input type="text" [class]="validacao.dangerClass1()" id="p1" [(ngModel)]='validacao.Player1' required placeholder="Informe Player 1" maxlength="20"/>
             </div>
         </div>
         <div class="row">
@@ -23,7 +23,7 @@
                 <label>P2 - X</label>
             </div>
             <div class="col-9" id="playerOne">
-                <input type="text" [class]="validacao.dangerClass2()" id="p1" [(ngModel)]='validacao.Player2' />
+                <input type="text" [class]="validacao.dangerClass2()" id="p1" [(ngModel)]='validacao.Player2' placeholder="Informe Player 2" maxlength="20"/>
             </div>
         </div>
     </div>
