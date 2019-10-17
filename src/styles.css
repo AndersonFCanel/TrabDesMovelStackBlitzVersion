@@ -213,3 +213,13 @@
      color: gold;
      background-color: greenyellow;
  }
+ 
+ .img-trofL {
+     flex-direction: column;
+     justify-content: center;
+ }
+ 
+ .img-trofR {
+     flex-direction: column;
+     justify-content: center;
+ }

@@ -19,7 +19,12 @@
 
 
     <div class="row rowsp">
-        <div class="col-1"></div>
+        <div class="col-1 ">
+
+            <!-- <div *ngIf="validacao.pontoPlayer1 > validacao.pontoPlayer2" class="img-trofL">
+                <img src="../../assets/img/trophy.png">
+            </div>-->
+        </div>
         <div class="col-1">
             <label for="p1Pts"></label>
         </div>
@@ -37,6 +42,9 @@
             <label for="p2Pts "></label>
         </div>
         <div class="col-1 ">
+            <!--<div *ngIf="validacao.pontoPlayer2 > validacao.pontoPlayer1" class="img-trofR">
+                <img src="../../assets/img/trophy.png">
+            </div>-->
         </div>
     </div>
     <div class="row rowsp "></div>
@@ -47,7 +55,8 @@
         <div class="col-md-6">
             <div class="paddings-bloco no-margin  fonte-btn">
                 <div class="row">
-                    <div class="col-3 ">
+                    <div class="col-3">
+
                     </div>
 
                     <div class="col-2  border-bottomC border-rightC  ">
@@ -96,7 +105,6 @@
                         <button [disabled]="marcarReadonly[8] " (click)="marcaJogada(8) " type="button " [class]="corBotao[8] ">{{jogada[8]}}</button>
                     </div>
                     <div class="col-3  ">
-
                     </div>
                 </div>
             </div>
