@@ -1,28 +1,29 @@
 <div id="modal-c">
-    <div class="modal-header">
-     
-        <div *ngIf="validacao.Empate">
+    <div class="modal-header align-items-center flex-column">
+
+        <div *ngIf="validacao.Empate ">
             <h4>Deu Velha!!!</h4>
         </div>
-        <div *ngIf="!validacao.Empate">
+        <div *ngIf="!validacao.Empate ">
+            <img src="../../../assets/img/trophy.png ">
             <h4>{{validacao.Vencedor}} é o vencedor desta partida!</h4>
         </div>
 
-        <button type="button" class="close" aria-label="Close" (click)="activeModal.dismiss('Cross click')">
-			<span aria-hidden="true">&times;</span>
-		</button>
+        <!--<button type="button " class="close " aria-label="Close " (click)="activeModal.dismiss( 'Cross click') ">
+			<span aria-hidden="true ">&times;</span>
+		</button>-->
     </div>
-    <div class="modal-body">
-          <h4 class="modal-title">Que tal mais uma ?</h4>
+    <div class="modal-body ">
+        <h4 class="modal-title ">Que tal mais uma ?</h4>
     </div>
-    <div class="modal-footer">
+    <div class="modal-footer ">
         <div class="col-sm-3 col-sm-5 "></div>
 
         <div class="col-sm-6 col-md-2 d-flex align-items-center flex-column ">
-            <button (click)="restart(false)" type="button" class="btn btn-info btn-lg btn-block  btn-circle btn-xl  btn-color-start">+ Uma</button>
+            <button (click)="restart(false) " type="button " class="btn btn-info btn-lg btn-block btn-circle btn-xl btn-color-start ">+ Uma</button>
         </div>
 
-        <div class="col-sm-3 col-md-5  ">
+        <div class="col-sm-3 col-md-5 ">
         </div>
 
     </div>
