@@ -70,8 +70,8 @@ export class TecladoComponent implements OnInit, AfterViewInit {
     modalRef.componentInstance.name = "World";
   }
 
-  clicDivteclado(){
-     if(this.validacao.Fim || this.validacao.Empate){
+  clicDivteclado() {
+    if (this.validacao.Fim || this.validacao.Empate) {
       this.open();
       return;
     }
@@ -79,17 +79,19 @@ export class TecladoComponent implements OnInit, AfterViewInit {
 
 
   marcaJogada(casaTabuleiro: number) {
-   
-   if(!this.validacao.checaNomeInformados()){
+
+    if (!this.validacao.checaNomeInformados()) {
       this.openInput();
       return;
     }
 
-    this.validacao.marcaJogada(casaTabuleiro);
-
     if (this.validacao.Fim || this.validacao.Vez == 9) {
       this.open();
     }
+
+    this.validacao.marcaJogada(casaTabuleiro);
+
+
 
   }
 

@@ -135,27 +135,26 @@ export class ValidacaoService {
     }
   }
 
-  checaNomeInformados()
-  {
-    if((this.Player1.length > 0 ) && (this.Player2.length > 0)){
+  checaNomeInformados() {
+    if ((this.Player1.length > 0) && (this.Player2.length > 0)) {
       return true;
-    }else{
+    } else {
       return false;
     }
   }
 
-  dangerClass1(){
-    if(this.Player1.length > 0 ){
+  dangerClass1() {
+    if (this.Player1.length > 0) {
       return "form-control  borderRoxa";
-    }else{
+    } else {
       return "form-control alert alert-danger border-danger ";
     }
   }
 
-  dangerClass2(){
-    if(this.Player2.length > 0 ){
+  dangerClass2() {
+    if (this.Player2.length > 0) {
       return "form-control  borderRoxa";
-    }else{
+    } else {
       return "form-control alert alert-danger border-danger  ";
     }
   }
@@ -194,40 +193,40 @@ export class ValidacaoService {
 
     this.Vez = this.vez + 1;
 
-if( this.DaVez  == "O" ){
-    if (this.vez % 2 == 0) {
-     
-      this.Jogada[casaTabuleiro] = "X";
-      this.readonly(casaTabuleiro);
-      this.checarVitoria();
-      return this.Jogada;
+    if (this.DaVez == "O") {
+      if (this.vez % 2 == 0) {
+
+        this.Jogada[casaTabuleiro] = "X";
+        this.readonly(casaTabuleiro);
+        this.checarVitoria();
+        return this.Jogada;
+      }
+      else {
+
+        this.Jogada[casaTabuleiro] = "O";
+        this.readonly(casaTabuleiro);
+        this.checarVitoria();
+        return this.Jogada;
+      }
+    } else {
+
+      if (this.vez % 2 == 0) {
+
+        this.Jogada[casaTabuleiro] = "O";
+        this.readonly(casaTabuleiro);
+        this.checarVitoria();
+        return this.Jogada;
+      }
+      else {
+
+        this.Jogada[casaTabuleiro] = "X";
+        this.readonly(casaTabuleiro);
+        this.checarVitoria();
+        return this.Jogada;
+      }
+
     }
-    else {
-    
-      this.Jogada[casaTabuleiro] = "O";
-      this.readonly(casaTabuleiro);
-      this.checarVitoria();
-      return this.Jogada;
-    }
- }else{
- 
- if (this.vez % 2 == 0) {
-     
-      this.Jogada[casaTabuleiro] = "O";
-      this.readonly(casaTabuleiro);
-      this.checarVitoria();
-      return this.Jogada;
-    }
-    else {
-    
-      this.Jogada[casaTabuleiro] = "X";
-      this.readonly(casaTabuleiro);
-      this.checarVitoria();
-      return this.Jogada;
-    }
- 
- }
- 
+
   }
 
   checarVitoria() {

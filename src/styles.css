@@ -3,38 +3,37 @@
      line-height: 1.75em;
      font-size: 16px;
      background-color: rgba(0, 0, 0, 0.950);
-     margin: 0 0 100px; /* bottom = footer height */
+     margin: 0 0 100px;
+     /* bottom = footer height */
  }
  
  html {
-    position: relative;
-    min-height: 100%;
-}
-
- footer{
-   font-family: Franklin Gothic Medium,
-   Franklin Gothic,ITC Fran;
-   font-size: 12px;
-
+     position: relative;
+     min-height: 100%;
  }
-
+ 
+ footer {
+     font-family: Franklin Gothic Medium, Franklin Gothic, ITC Fran;
+     font-size: 12px;
+ }
+ 
  .tit {
      color: rgb(17, 17, 17);
      border-bottom: 3px solid rgb(35, 6, 70);
      border-top: 3px solid rgb(35, 6, 70);
  }
-
- label{
+ 
+ label {
      color: rgb(148, 148, 219);
      border-bottom: 3px solid rgb(35, 6, 70);
      border-top: 3px solid rgb(35, 6, 70);
  }
  
-input[type=text]{
-  color: rgb(148, 148, 219);
-  background-color: rgba(15, 3, 29, 0.904)!important;
-}
-
+ input[type=text] {
+     color: rgb(148, 148, 219);
+     background-color: rgba(15, 3, 29, 0.904)!important;
+ }
+ 
  .alignR {
      text-align: right;
  }
@@ -128,84 +127,82 @@ input[type=text]{
  }
  
  .textoL {
-      color: rgb(148, 148, 219);
+     color: rgb(148, 148, 219);
  }
-
-
- .btn-color-clear { 
+ 
+ .btn-color-clear {
      /* flex para alinhar conteúdo*/
-   display: flex;
-   justify-content: center;
-   align-items: center;
+     display: flex;
+     justify-content: center;
+     align-items: center;
      color: rgba(255, 217, 0, 0.993);
      background-color: rgba(24, 23, 23, 0.616);
  }
  
  .btn-color-Reset {
-    /* flex para alinhar conteúdo*/
-   display: flex;
-   justify-content: center;
-   align-items: center;
+     /* flex para alinhar conteúdo*/
+     display: flex;
+     justify-content: center;
+     align-items: center;
      color: red;
      background-color: rgba(24, 23, 23, 0.616);
  }
  
  .btn-color-teclado {
-   vertical-align: middle;
+     vertical-align: middle;
      color: rgba(24, 23, 23, 0.616);
      background-color: rgba(24, 23, 23, 0.616);
  }
  
  .btn-color-teclado-marcado {
-   /* flex para alinhar conteúdo*/
-   display: flex;
-   justify-content: center;
-   align-items: center;
-     font-weight:bold;
+     /* flex para alinhar conteúdo*/
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     font-weight: bold;
      color: rgb(0, 255, 255);
      background-color: rgba(24, 23, 23, 0.616);
  }
-
- .btn-color-teclado:hover{
-   /* flex para alinhar conteúdo*/
-   display: flex;
-   justify-content: center;
-   align-items: center;
-    font-weight:bold;
-     color: rgb(0, 255, 255);
-     background-color: rgba(24, 23, 23, 0.616);
-}
-
-.btn-color-teclado:focus{
- /* flex para alinhar conteúdo*/
-   display: flex;
-   justify-content: center;
-   align-items: center;
-     font-weight:bold;
+ 
+ .btn-color-teclado:hover {
+     /* flex para alinhar conteúdo*/
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     font-weight: bold;
      color: rgb(0, 255, 255);
      background-color: rgba(24, 23, 23, 0.616);
  }
-
-  .btn-color-teclado-marcado:hover{
-    /* flex para alinhar conteúdo*/
-   display: flex;
-   justify-content: center;
-   align-items: center;
-    font-weight:bold;
-     color: rgb(0, 255, 255);
-     background-color: rgba(24, 23, 23, 0.616);
-}
-
-.btn-color-teclado-marcado:focus{
- /* flex para alinhar conteúdo*/
-   display: flex;
-   justify-content: center;
-   align-items: center;
-     font-weight:bold;
+ 
+ .btn-color-teclado:focus {
+     /* flex para alinhar conteúdo*/
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     font-weight: bold;
      color: rgb(0, 255, 255);
      background-color: rgba(24, 23, 23, 0.616);
  }
-
+ 
+ .btn-color-teclado-marcado:hover {
+     /* flex para alinhar conteúdo*/
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     font-weight: bold;
+     color: rgb(0, 255, 255);
+     background-color: rgba(24, 23, 23, 0.616);
+ }
+ 
+ .btn-color-teclado-marcado:focus {
+     /* flex para alinhar conteúdo*/
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     font-weight: bold;
+     color: rgb(0, 255, 255);
+     background-color: rgba(24, 23, 23, 0.616);
+ }
  
  .color-input {
      color: rgb(175, 96, 161);
