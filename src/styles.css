@@ -209,6 +209,10 @@
  }
  
  .jogada-vencedora {
+    display: flex;
+     justify-content: center;
+     align-items: center;
+     font-weight: bold;
      color: rgb(56, 20, 100);
      background-color: gold;
  }
